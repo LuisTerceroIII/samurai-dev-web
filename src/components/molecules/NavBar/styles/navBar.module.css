@@ -1,0 +1,38 @@
+:root {
+    --backgroud-color: #bfdbed;
+    --font: Alef, serif;
+}
+
+.navBarGrid {
+    display: grid;
+    /*    border: 2px solid blue;*/
+    max-width: 100%;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.navBarGrid a {
+    /*    border: 1px dotted black ;*/
+    cursor: pointer;
+    font-family: var(--font);
+    font-size: 3vh;
+}
+
+.navBarGrid a:after {
+    content: "";
+    display: block;
+    background: black;
+    height: 2px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    margin: auto;
+}
+
+.navBarGrid a:hover::after {
+    opacity: 1;
+    transform: scaleX(1.1);
+    transition: transform 0.3s ease;
+}

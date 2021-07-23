@@ -1,0 +1,27 @@
+import * as React from "react";
+// @ts-ignore
+import * as styles from "./styles/Header.module.css";
+import { StaticImage } from "gatsby-plugin-image";
+import NavBar from "../../components/molecules/NavBar/NavBar";
+
+const Header: React.FC = ({ children }): JSX.Element => {
+  return (
+    <div>
+      <header className={styles.header}>
+        <StaticImage
+          src={
+            "C:\\Users\\luise\\WebstormProjects\\Samurai-Dev-Site\\samurai-dev-site\\src\\assets\\images\\samurailogo.png"
+          }
+          alt={"logo"}
+          className={styles.logo}
+        />
+        <span className={styles.menu}>
+          <NavBar />
+        </span>
+      </header>
+      {children}
+    </div>
+  );
+};
+
+export default Header;
