@@ -12,7 +12,7 @@ const LandingView:React.FC<LandingProps> = ({title,paragraph,button,styles}): JS
         <div className={styles.grid}>
             <Title cssClass={title.cssClass} content={title.content} />
             <StaticImage      placeholder="blurred"
-                              src={"C:\\Users\\luise\\WebstormProjects\\Samurai-Dev-Site\\samurai-dev-site\\src\\assets\\images\\landingImage.png"}
+                              src={"../../assets/images/landingImage.png"}
                               alt={"My profile picture"}
                               className={styles.image}
                               objectFit={'contain'}

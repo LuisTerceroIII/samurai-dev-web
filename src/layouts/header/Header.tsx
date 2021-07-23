@@ -9,9 +9,7 @@ const Header: React.FC = ({ children }): JSX.Element => {
     <div>
       <header className={styles.header}>
         <StaticImage
-          src={
-            "C:\\Users\\luise\\WebstormProjects\\Samurai-Dev-Site\\samurai-dev-site\\src\\assets\\images\\samurailogo.png"
-          }
+          src={"../../assets/images/samurailogo.png"}
           alt={"logo"}
           className={styles.logo}
         />
