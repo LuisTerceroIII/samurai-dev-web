@@ -43,6 +43,5 @@ En este sitio obtendrás la información necesaria para saber  de qué manera pu
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
-    "gatsby-transformer-typescript-css-modules",
   ],
 };
