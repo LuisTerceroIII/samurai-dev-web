@@ -22,7 +22,7 @@
 .navBarGrid a:after {
     content: "";
     display: block;
-    background: black;
+    background-color:  var(--select-opt-menu-color);
     height: 2px;
     border-radius: 10px;
     opacity: 0;

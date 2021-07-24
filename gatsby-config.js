@@ -3,7 +3,7 @@ module.exports = {
     title: "Samurai dev site",
     sections: {
       landing: {
-        logo: "C:\\Users\\luise\\WebstormProjects\\Samurai-Dev-Site\\samurai-dev-site\\src\\assets\\images\\samurailogo.png",
+        logo: "../../assets/images/samurailogo.png",
         navOption: ["Sobre mi", "Servicios", "Proyectos", "Contacto"],
         title: {
           content:

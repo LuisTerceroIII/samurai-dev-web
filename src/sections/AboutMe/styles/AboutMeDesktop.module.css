@@ -1,8 +1,39 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    min-width: 100%;
+    margin-top: -5%;
+    /*border: 1px solid red;*/
+}
 .title {
-    color: violet;
+    color: var(--title-color);
+    font-family: var(--font);
     font-size: 5vh;
+    font-weight: normal;
+    justify-self: center;
+    text-align: center;
 }
 .paragraph {
-    color : green;
-    font-weight: 550;
+    color : var(--text-color);
+    font-family: var(--font);
+    font-size: var(--desktop-text-size);
+    text-align: center;
+    padding: 0% 10% 0% 10%;
+    line-height: var(--desktop-line-height);
+    position: relative;
+    top: -3%;
+}
+
+.image {
+    max-width: 60%;
+    align-self: center;
+}
+
+.icon {
+    max-width: 3.3%;
+    align-self: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    cursor: pointer;
 }

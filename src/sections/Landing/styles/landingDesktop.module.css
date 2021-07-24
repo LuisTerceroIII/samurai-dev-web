@@ -12,12 +12,13 @@ Esta hoja de estilo contiene todos los estilos para desktop Landing.
     display: grid;
     grid-auto-columns: 1fr;
     grid-auto-rows: 100px;
-    background-color: #bfdbed;
+    /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(191,219,237,0.725910432532388) 0%, rgba(0,212,255,0.6194678555015756) 100%);*/
     height: 100%;
+    margin-top: -8%;
 }
 
 .title {
-    color: #6762a6;
+    color: var(--title-color);
     text-align: left;
     transition: transform 0.2s ease;
     grid-row: 3/4;
@@ -32,12 +33,12 @@ Esta hoja de estilo contiene todos los estilos para desktop Landing.
 }
 
 .paragraph {
-    color: #404137;
-    font-size: 3vh;
+    color: var(--text-color);
+    font-size: var(--desktop-text-size);
     grid-row: 4/8;
     grid-column: 2/8;
     font-family: var(--font);
-    line-height: 6.5vh;
+    line-height: var(--desktop-line-height);
     word-spacing: 0.8vh;
     text-align: left;
     white-space: break-spaces;
@@ -73,7 +74,7 @@ Esta hoja de estilo contiene todos los estilos para desktop Landing.
     grid-row: 8/10;
     justify-self: center;
     position: relative;
-    top: -35%;
+    top: -30%;
 
 }
 
