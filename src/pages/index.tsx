@@ -4,6 +4,7 @@ import Header from "../layouts/header/Header";
 // @ts-ignore
 import * as styles from "../assets/css/global.module.css";
 import AboutMe from "../sections/AboutMe/AboutMe";
+import PackServices from "../components/molecules/packServices/PackServices";
 //TODO: Compartir varibales css desde un archivo.
 const IndexPage = () : JSX.Element => {
   return (
@@ -11,6 +12,7 @@ const IndexPage = () : JSX.Element => {
           <Header>
               <Landing/>
               <AboutMe/>
+              <PackServices />
           </Header>
       </div>
   )

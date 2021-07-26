@@ -37,6 +37,29 @@ En este sitio obtendrás la información necesaria para saber  de qué manera pu
             cssClass : ""
           }
       },
+      services : {
+        packsSection : {
+          title : "Packs",
+          servicesData: [
+            {
+              id: 1,
+              name: "Web de Contacto",
+              description : "WEB CONTACTO Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum odio eu feugiat pretium. Quis eleifend quam adipiscing vitae proin. Dolor sit amet consectetur adipiscing elit pellentesque habitant. Quis ipsum suspendisse ultrices gravida dictum fusce. Sit amet nulla facilisi morbi tempus iaculis. Nibh ipsum consequat nisl vel pretium lectus quam. At risus viverra adipiscing at in. "
+            },
+            {
+              id: 2,
+              name: "Web de Portfolio",
+              description : "WEB PORTFOLIO Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum odio eu feugiat pretium. Quis eleifend quam adipiscing vitae proin. Dolor sit amet consectetur adipiscing elit pellentesque habitant. Quis ipsum suspendisse ultrices gravida dictum fusce. Sit amet nulla facilisi morbi tempus iaculis. Nibh ipsum consequat nisl vel pretium lectus quam. At risus viverra adipiscing at in. "
+            },
+            {
+              id: 3,
+              name: "Aplicacion Web",
+              description : "APLICACION WEB Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum odio eu feugiat pretium. Quis eleifend quam adipiscing vitae proin. Dolor sit amet consectetur adipiscing elit pellentesque habitant. Quis ipsum suspendisse ultrices gravida dictum fusce. Sit amet nulla facilisi morbi tempus iaculis. Nibh ipsum consequat nisl vel pretium lectus quam. At risus viverra adipiscing at in. "
+            }
+          ],
+          buttonMessage : "Contacto"
+        }
+      }
     },
   },
   plugins: [

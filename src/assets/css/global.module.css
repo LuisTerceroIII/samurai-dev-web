@@ -1,3 +1,5 @@
+/*Fuente Baloo Chettan 2*/
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600;700;800&display=swap');
 
 body, html {
     height: 100% !important;
@@ -12,10 +14,12 @@ html {
 }
 
 :root {
-    --font : Alef, serif;
+    --font : 'Baloo Chettan 2', cursive;
     --title-color :#6762a6;
-    --select-opt-menu-color : #833ab4;
+    --select-opt-menu-color : #6762a6;
     --text-color : #404137;
     --desktop-text-size : 3vh;
     --desktop-line-height : 6.5vh;
 }
+
+

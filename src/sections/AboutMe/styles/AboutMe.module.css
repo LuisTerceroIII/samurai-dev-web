@@ -2,14 +2,18 @@
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: center;
     min-width: 100%;
-    margin-top: -5%;
+    position: relative;
+    top: -4%;
+
+
     /*border: 1px solid red;*/
 }
 .title {
     color: var(--title-color);
     font-family: var(--font);
-    font-size: 5vh;
+    font-size: 2.5em;
     font-weight: normal;
     justify-self: center;
     text-align: center;
@@ -22,12 +26,13 @@
     padding: 0% 10% 0% 10%;
     line-height: var(--desktop-line-height);
     position: relative;
-    top: -3%;
+
 }
 
 .image {
     max-width: 60%;
     align-self: center;
+    margin-top: 1%;
 }
 
 .icon {

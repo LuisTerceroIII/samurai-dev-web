@@ -22,10 +22,14 @@
 
 .logo {
     /* border: 2px solid chartreuse;*/
-    width: 50%;
+    max-width: 90%;
     overflow: visible !important;
+    position: relative;
+    left: 20%;
+    top: 2%;
 }
 
+/*
 .logo::after {
     content: "SamuraiDev.";
     font-family: var(--font);
@@ -34,4 +38,4 @@
     position: relative;
     top: -35%;
     left: 85%;
-}
+}*/

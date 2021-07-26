@@ -27,12 +27,12 @@
     border-radius: 10px;
     opacity: 0;
     transform: scaleX(0);
-    transition: transform 0.3s ease;
+    transition: all 0.5s ease;
     margin: auto;
 }
 
 .navBarGrid a:hover::after {
     opacity: 1;
     transform: scaleX(1.1);
-    transition: transform 0.3s ease;
+
 }

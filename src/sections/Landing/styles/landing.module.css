@@ -25,8 +25,9 @@ Esta hoja de estilo contiene todos los estilos para desktop Landing.
     grid-column: 1/7;
     align-self: center;
     font-size: 5.2vh;
-    font-family: var(--font);
-    word-spacing: -7px;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-weight: 550;
+    word-spacing: 2px;
     position: relative;
     left: 5.5%;
     top: 15%;
