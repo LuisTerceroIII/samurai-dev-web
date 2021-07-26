@@ -22,11 +22,12 @@
 
 .logo {
     /* border: 2px solid chartreuse;*/
-    max-width: 90%;
+    max-width: 85%;
+    max-height: 100%;
     overflow: visible !important;
     position: relative;
-    left: 20%;
-    top: 2%;
+    left: 22%;
+    top: 10%;
 }
 
 /*

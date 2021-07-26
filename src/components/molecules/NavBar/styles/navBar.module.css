@@ -23,7 +23,7 @@
     content: "";
     display: block;
     background-color:  var(--select-opt-menu-color);
-    height: 2px;
+    height: 3px;
     border-radius: 10px;
     opacity: 0;
     transform: scaleX(0);
