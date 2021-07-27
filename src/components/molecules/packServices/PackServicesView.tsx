@@ -1,9 +1,6 @@
 import * as React from "react";
-import Icon from "../../atoms/Icon/Icon";
 import Title from "../../atoms/Title/Title";
 import Paragraph from "../../atoms/Paragraph/Paragraph";
-import { useState } from "react";
-import Button from "../../atoms/Button/Button";
 import PackServicesProps from "./types/PackServicesProps";
 import { v4 as uuidv4 } from "uuid";
 // @ts-ignore
@@ -15,11 +12,13 @@ const PackServicesView: React.FC<PackServicesProps> = ({
   services,
   serviceSelected,
   changeService,
+  arrowsStyles,
 }) => {
   return (
     <section className={styles.grid}>
-      {services.map((service) => (
-        <div className={styles.imageIconContainer} key={uuidv4()}>
+      {services.map((service,key) => (
+
+        <div className={styles.titleIconContainer} key={uuidv4()} onClick={() => changeService(service.id)}>
           <span className={styles.titleBox} key={uuidv4()}>
             <Title
               cssClass={styles.serviceName}
@@ -28,7 +27,7 @@ const PackServicesView: React.FC<PackServicesProps> = ({
             />
           </span>
           <span
-            className={styles.iconContainer}
+            className={service.active ? arrowsStyles.normal : arrowsStyles.invert}
             key={uuidv4()}
             onClick={() => changeService(service.id)}
           >

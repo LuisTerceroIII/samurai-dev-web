@@ -20,6 +20,7 @@ html {
     --text-color : #404137;
     --desktop-text-size : 3vh;
     --desktop-line-height : 6.5vh;
+    --perfect-box-shadow : -1px 0px 34px -11px rgba(0,0,0,1);
 }
 
 

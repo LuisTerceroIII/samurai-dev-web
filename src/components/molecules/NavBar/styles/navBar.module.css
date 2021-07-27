@@ -17,6 +17,7 @@
     cursor: pointer;
     font-family: var(--font);
     font-size: 3vh;
+    text-shadow: 2px 1px 48px rgba(251,228,232,0.88);
 }
 
 .navBarGrid a:after {
