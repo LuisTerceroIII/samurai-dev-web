@@ -12,22 +12,20 @@ const ServicesView: React.FC<ServiceProps> = ({ servicesCardsData }) => {
   useEffect(() => {}, []);
 
   return (
-    <section className={styles.grid}>
+    <div className={styles.grid}>
       <Title cssClass={styles.mainTitle} content={"Servicios"} />
       <Title cssClass={styles.secondTitle} content={"Packs"} />
       <PackServices />
-      <Button
-        cssClass={styles.button}
-        value={"Contactame"}
-        disable={false}
+      <div
+        className={styles.button}
         onClick={() => console.log("Button packs services")}
-      />
+      ><p>{"Contactame"}</p></div>
       <Title cssClass={styles.thirdTitle} content={"Específicos"} />
       <ServicesCards
         servicesCardsData={servicesCardsData}
         cssClass={styles.servicesCards}
       />
-    </section>
+    </div>
   );
 };
 

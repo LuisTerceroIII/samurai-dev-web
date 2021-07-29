@@ -22,12 +22,10 @@ const LandingView: React.FC<LandingProps> = ({
         objectFit={"contain"}
       />
       <Paragraph content={paragraph.content} cssClass={paragraph.cssClass} />
-      <Button
-        cssClass={button.cssClass}
-        value={button.value}
+      <div
+        className={button.cssClass}
         onClick={button.onClick}
-        disable={button.disable}
-      />
+      ><p>{button.value}</p> </div>
     </div>
   );
 };

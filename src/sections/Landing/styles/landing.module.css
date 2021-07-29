@@ -78,11 +78,20 @@ Esta hoja de estilo contiene todos los estilos para desktop Landing.
   top: -30%;
   box-shadow: var(--perfect-box-shadow);
   font-family: var(--font);
+  display: flex;
 }
 
 .button:hover {
   transform: scale(1.1);
   transition: all 0.5s ease-out;
+}
+
+.button p {
+  font-family: var(--font);
+  align-self: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header {
