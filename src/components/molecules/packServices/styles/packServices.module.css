@@ -4,6 +4,7 @@
   grid-template-rows: 1fr;
   justify-items: center;
   padding: 0% 15% 0% 15%;
+
 }
 
 .titleIconContainer {
@@ -27,6 +28,10 @@
   border-radius: 20px;
   padding: 7%;
   box-shadow: -1px 0px 34px -11px rgb(193, 165, 193);
+  transition: all 0.5s ease-out;
+}
+.titleBox:hover {
+  transform: scale(1.1);
 }
 
 .serviceName {
