@@ -1,7 +1,7 @@
 .mainBoxLeft {
   /*border: 2px solid red;*/
-  min-width: 70%;
-  max-width: 70%;
+  min-width: 85%;
+  max-width: 85%;
   min-height: 5vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);

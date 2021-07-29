@@ -4,20 +4,6 @@ import { graphql, useStaticQuery } from "gatsby";
 import { useEffect, useState } from "react";
 
 const Services = () => {
-  /*  const backendIcons = useStaticQuery(graphql``)
-    const backendImage = useStaticQuery(graphql``)
-    const backendData = useStaticQuery(graphql``)
-    const frontendIcons = useStaticQuery(graphql``)
-    const frontendImage = useStaticQuery(graphql``)
-    const frontendData = useStaticQuery(graphql``)
-    const fullstackImage = useStaticQuery(graphql``)
-    const fullstackData = useStaticQuery(graphql``)
-    const maintenanceImage = useStaticQuery(graphql``)
-    const maintenanceData = useStaticQuery(graphql``)
-    const webDesignImage = useStaticQuery(graphql``)
-    const webDesignData = useStaticQuery(graphql``)*/
-
-  //const backendIcons:any[] = backendIconsQuery.allFile.edges;
 
   const data = useStaticQuery(graphql`
     query serviceData {
