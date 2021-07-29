@@ -1,26 +1,30 @@
-/*Fuente Baloo Chettan 2*/
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600;700;800&display=swap');
-
-body, html {
-    height: 100% !important;
-    margin: 0 !important;
+/*Fuente Nunito*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+body,
+html {
+  height: 100% !important;
+  margin: 0 !important;
 }
 
 html {
-   /* background: rgb(49,180,124);
+  /* background: rgb(49,180,124);
     background: linear-gradient(90deg, rgba(49,180,124,0.6670869031206232) 4%, rgba(126,175,108,0.4429972672662815) 43%, rgba(0,236,255,0.2497199563419118) 74%);*/
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,0.4738095921962535) 0%, rgba(253,29,29,0.07885160900297616) 50%, rgba(252,176,69,0.38977597875087533) 100%);
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 0.4738095921962535) 0%,
+    rgba(253, 29, 29, 0.07885160900297616) 50%,
+    rgba(252, 176, 69, 0.38977597875087533) 100%
+  );
 }
 
 :root {
-    --font : 'Baloo Chettan 2', cursive;
-    --title-color :#6762a6;
-    --select-opt-menu-color : #6762a6;
-    --text-color : #404137;
-    --desktop-text-size : 3vh;
-    --desktop-line-height : 6.5vh;
-    --perfect-box-shadow : -1px 0px 34px -11px rgba(0,0,0,1);
+  --font: "Nunito", sans-serif;
+  --title-color: #6762a6;
+  --secondary-title-color: #3d80b2;
+  --select-opt-menu-color: #6762a6;
+  --text-color: #404137;
+  --desktop-text-size: 3vh;
+  --desktop-line-height: 6.5vh;
+  --perfect-box-shadow: -1px 0px 34px -11px rgba(0, 0, 0, 1);
 }
-
-

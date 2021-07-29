@@ -25,7 +25,7 @@ Esta hoja de estilo contiene todos los estilos para desktop Landing.
     grid-column: 1/7;
     align-self: center;
     font-size: 5.2vh;
-    font-family: 'Baloo Chettan 2', cursive;
+    font-family: var(--font);
     font-weight: 550;
     word-spacing: 2px;
     position: relative;
@@ -69,20 +69,21 @@ Esta hoja de estilo contiene todos los estilos para desktop Landing.
     background-color: #f7ca13;
     font-size: 2.5vh;
     color: black;
-    transition: transform 0.2s ease;
+    transition: all 0.5s ease-out;
     cursor: pointer;
     grid-column: 3/5;
     grid-row: 8/10;
     justify-self: center;
     position: relative;
     top: -30%;
-    box-shadow: var(--perfect-box-shadow)
+    box-shadow: var(--perfect-box-shadow);
+    font-family: var(--font);
 
 }
 
 .button:hover {
     transform: scale(1.1);
-    transition: transform 0.2s ease;
+    transition: all 0.5s ease-out;
 }
 
 

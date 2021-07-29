@@ -18,7 +18,7 @@
 }
 
 .secondTitle {
-    color: var(--title-color);
+    color: var(--secondary-title-color);
     font-family: var(--font);
     font-size: 2.3em;
     font-weight: normal;
@@ -34,7 +34,7 @@
     background-color: #b893ff;
     font-size: 2.5vh;
     color: black;
-    transition: transform 0.4s ease;
+    transition: all 0.5s ease-out;
     cursor: pointer;
     align-self: center;
     margin-top: 3%;
@@ -42,15 +42,35 @@
 }
 .button:hover {
     transform: scale(1.1);
-    transition: transform 0.2s ease;
+    transition: all 0.5s ease-out;
 }
 
 .thirdTitle {
-    color: var(--title-color);
+    color: var(--secondary-title-color);
     font-family: var(--font);
     font-size: 2.3em;
     font-weight: normal;
     justify-self: center;
     text-align: center;
     margin-top: 5%;
+}
+
+.servicesCards {
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: auto;
+    justify-items: center ;
+    align-items: stretch ;
+
+}
+
+@media screen and (max-width:1400px) {
+    .servicesCards {
+        min-width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-auto-rows: auto;
+        justify-items: center;
+    }
 }

@@ -11,18 +11,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 80%;
-    min-height: 9em;
+    width: fit-content;
+    height: fit-content;
     cursor: pointer;
-    text-shadow: 1px 0px 20px rgba(39,36,38,0.57);
+    align-self: center;
+    justify-self: center;
+    width: 80%;
+    gap: 15px;
 }
 
 .titleBox {
-    max-width: 70%;
-    min-height: 70%;
+    min-height: 21vh;
+    max-height: 25vh;;
     background-color: #f6f7eb;
-    text-align: center;
-    font-size: 4vh;
     border-radius: 20px;
     padding: 7%;
     box-shadow: -1px 0px 34px -11px rgb(193, 165, 193);
@@ -32,6 +33,11 @@
     font-family: var(--font);
     font-weight: 500;
     text-transform: uppercase;
+    text-align: center;
+    align-self: center;
+    font-size: 4vh;
+    text-shadow: 1px 0px 20px rgba(39,36,38,0.57);
+    white-space: break-spaces;
 }
 
 .iconContainer {
@@ -46,7 +52,6 @@
     cursor: pointer;
     transform: rotate(180deg);
     position: relative;
-    top: 7%;
 }
 
 .paragraph {

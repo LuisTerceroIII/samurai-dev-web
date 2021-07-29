@@ -15,11 +15,15 @@ const AboutMeView: React.FC<AboutMeProps> = ({
       <Title content={title.content} cssClass={styles.title} />
       <Paragraph content={paragraph.content} cssClass={styles.paragraph} />
       <StaticImage
-        src={"../../assets/images/aboutMe.png"}
+        src={"../../assets/images/AboutMe/aboutMe.png"}
         alt={"me"}
         className={styles.image}
       />
-      <StaticImage src={"../../assets/images/iconCV.png"} alt={"icon CV"} className={styles.icon}/>
+      <StaticImage
+        src={"../../assets/images/AboutMe/iconCV.png"}
+        alt={"icon CV"}
+        className={styles.icon}
+      />
     </section>
   );
 };

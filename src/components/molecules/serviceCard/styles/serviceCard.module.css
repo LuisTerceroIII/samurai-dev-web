@@ -1,0 +1,81 @@
+.mainBoxLeft {
+    /*border: 2px solid red;*/
+    min-width: 70%;
+    max-width: 70%;
+    min-height: 5vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,minmax(10px,50px));
+    background-color: #f7db9b;
+    margin: 2%;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: all 0.5s ease-out;
+    box-shadow: var(--perfect-box-shadow);
+    border-radius: 10px;
+}
+.mainBoxLeft:hover{
+    transform: scale(1);
+}
+
+.title {
+    grid-column: 2/5;
+    grid-row: 1/2;
+    justify-self: start;
+    font-family: var(--font);
+    margin-left: 4%;
+
+}
+
+.imageBox {
+    /*border: 2px solid blue;*/
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background-color: #f7ca13;
+    border-radius: 10px 0px 0px 10px;
+}
+.image  {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    transform: scale(0.8);
+    vertical-align: center;
+    display: block;
+    max-width: 90%;
+    min-width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+
+}
+.image img {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    margin: auto;
+    max-width: 60%;
+    min-width: 100%;
+    vertical-align: center;
+}
+
+.description {
+    grid-column: 2/5;
+    grid-row: 2/3;
+    justify-self: flex-start;
+    font-family: var(--font);
+    margin-left: 3.5%;
+    padding-right: 5%;
+    position: relative;
+    top: -24%;
+}
+
+.iconBar {
+    grid-column: 2/5;
+    grid-row: 3/4;
+    justify-self: flex-start;
+    margin-left: 2%;
+    min-width: 80%;
+    max-width: 90%;
+}
