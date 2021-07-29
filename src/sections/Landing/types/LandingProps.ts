@@ -4,8 +4,8 @@ import ParagraphProps from "../../../components/atoms/Paragraph/types/ParagraphP
 
 //TODO: Agregar para icono y imagen !
 export default interface LandingProps {
-    title : TitleProps,
-    button : ButtonProps,
-    paragraph : ParagraphProps,
-    styles : any
+  title: TitleProps;
+  button: ButtonProps;
+  paragraph: ParagraphProps;
+  styles: any;
 }

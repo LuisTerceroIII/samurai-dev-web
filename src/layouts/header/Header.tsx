@@ -9,7 +9,9 @@ const Header: React.FC = ({ children }): JSX.Element => {
     <div>
       <header className={styles.header}>
         <StaticImage
-          src={"../../assets/images/Logo/LOGO WEB HORIZONTAL_LOGO WEB HORIZONTAL COLOR.png"}
+          src={
+            "../../assets/images/Logo/LOGO WEB HORIZONTAL_LOGO WEB HORIZONTAL COLOR.png"
+          }
           alt={"logo"}
           className={styles.logo}
           placeholder="blurred"

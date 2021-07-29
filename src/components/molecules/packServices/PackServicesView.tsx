@@ -16,9 +16,12 @@ const PackServicesView: React.FC<PackServicesProps> = ({
 }) => {
   return (
     <section className={styles.grid}>
-      {services.map((service,key) => (
-
-        <div className={styles.titleIconContainer} key={uuidv4()} onClick={() => changeService(service.id)}>
+      {services.map((service, key) => (
+        <div
+          className={styles.titleIconContainer}
+          key={uuidv4()}
+          onClick={() => changeService(service.id)}
+        >
           <span className={styles.titleBox} key={uuidv4()}>
             <Title
               cssClass={styles.serviceName}
@@ -27,7 +30,9 @@ const PackServicesView: React.FC<PackServicesProps> = ({
             />
           </span>
           <span
-            className={service.active ? arrowsStyles.normal : arrowsStyles.invert}
+            className={
+              service.active ? arrowsStyles.normal : arrowsStyles.invert
+            }
             key={uuidv4()}
             onClick={() => changeService(service.id)}
           >

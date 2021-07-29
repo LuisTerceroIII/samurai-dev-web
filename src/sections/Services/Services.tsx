@@ -155,17 +155,10 @@ const Services = () => {
   `);
 
   const serviceTexts = data.texts.siteMetadata.sections.services;
-  useEffect(() => {
-    console.log(serviceTexts);
-  }, []);
   const firstTitle = serviceTexts.title;
   const secondTitle = serviceTexts.packsSection.title;
   const thirdTitle = serviceTexts.specific.title;
   const buttonContent = serviceTexts.packsSection.buttonMessage;
-
-  useEffect(() => {
-    console.log(data.backendImage.childImageSharp);
-  }, []);
 
   const servicesCardsData = [
     {
@@ -178,6 +171,7 @@ const Services = () => {
       left: true,
     },
     {
+      //FRONTEND
       name: serviceTexts.specific.frontend.title,
       icons: data.frontendIcons.edges,
       image: data.frontendImage.childImageSharp,
@@ -187,6 +181,7 @@ const Services = () => {
     },
 
     {
+      //FULLSTACK
       name: serviceTexts.specific.fullstack.title,
       image: data.fullstackImage.childImageSharp,
       title: serviceTexts.specific.fullstack.title,
@@ -194,6 +189,7 @@ const Services = () => {
       left: true,
     },
     {
+      //MAINTENANCE
       name: serviceTexts.specific.maintenance.title,
       image: data.maintenanceImage.childImageSharp,
       title: serviceTexts.specific.maintenance.title,
@@ -201,6 +197,7 @@ const Services = () => {
       left: true,
     },
     {
+      //WEB DESIGN
       name: serviceTexts.specific.webDesign.title,
       image: data.webDesignImage.childImageSharp,
       title: serviceTexts.specific.webDesign.title,

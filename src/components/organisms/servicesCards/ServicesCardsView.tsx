@@ -6,11 +6,11 @@ import ServiceCard from "../../molecules/serviceCard/ServiceCard";
 
 const ServicesCardsView: React.FC<ServicesCardsProps> = ({
   servicesCardsData,
-    cssClass
+  cssClass,
 }) => {
   return (
     <div className={`${styles.grid}, ${cssClass}`}>
-      {servicesCardsData.map((serviceCardData,index) => (
+      {servicesCardsData.map((serviceCardData, index) => (
         <ServiceCard
           description={serviceCardData.description}
           icons={serviceCardData?.icons}

@@ -4,95 +4,92 @@ Esta hoja de estilo contiene todos los estilos para desktop Landing.
 */
 
 :root {
-    --backgroud-color : #bfdbed;
-    --font : Alef, serif;
+  --backgroud-color: #bfdbed;
+  --font: Alef, serif;
 }
 
 .grid {
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 100px;
-    /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(191,219,237,0.725910432532388) 0%, rgba(0,212,255,0.6194678555015756) 100%);*/
-    height: 100%;
-    margin-top: -8%;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 100px;
+  /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(191,219,237,0.725910432532388) 0%, rgba(0,212,255,0.6194678555015756) 100%);*/
+  height: 100%;
+  margin-top: -8%;
 }
 
 .title {
-    color: var(--title-color);
-    text-align: left;
-    transition: transform 0.2s ease;
-    grid-row: 3/4;
-    grid-column: 1/7;
-    align-self: center;
-    font-size: 5.2vh;
-    font-family: var(--font);
-    font-weight: 550;
-    word-spacing: 2px;
-    position: relative;
-    left: 5.5%;
-    top: 15%;
+  color: var(--title-color);
+  text-align: left;
+  transition: transform 0.2s ease;
+  grid-row: 3/4;
+  grid-column: 1/7;
+  align-self: center;
+  font-size: 5.2vh;
+  font-family: var(--font);
+  font-weight: 550;
+  word-spacing: 2px;
+  position: relative;
+  left: 5.5%;
+  top: 15%;
 }
 
 .paragraph {
-    color: var(--text-color);
-    font-size: var(--desktop-text-size);
-    grid-row: 4/8;
-    grid-column: 2/8;
-    font-family: var(--font);
-    line-height: var(--desktop-line-height);
-    word-spacing: 0.8vh;
-    text-align: left;
-    white-space: break-spaces;
-    position: relative;
-    left: -11%;
-    top: 4%;
-    display: block;
-    max-width: 92%;
+  color: var(--text-color);
+  font-size: var(--desktop-text-size);
+  grid-row: 4/8;
+  grid-column: 2/8;
+  font-family: var(--font);
+  line-height: var(--desktop-line-height);
+  word-spacing: 0.8vh;
+  text-align: left;
+  white-space: break-spaces;
+  position: relative;
+  left: -11%;
+  top: 4%;
+  display: block;
+  max-width: 92%;
 }
 .image {
-    grid-column: 7/10;
-    grid-row: 3/8;
-    overflow: visible;
-    align-self: center;
-    position: relative;
-    top: -13%;
-    left: 1%;
+  grid-column: 7/10;
+  grid-row: 3/8;
+  overflow: visible;
+  align-self: center;
+  position: relative;
+  top: -13%;
+  left: 1%;
 }
 .image img {
-    max-width: 90% !important;
+  max-width: 90% !important;
 }
 .button {
-    border-style : none;
-    width: 25vh;
-    height: 9vh;
-    border-radius: 40px;
-    background-color: #f7ca13;
-    font-size: 2.5vh;
-    color: black;
-    transition: all 0.5s ease-out;
-    cursor: pointer;
-    grid-column: 3/5;
-    grid-row: 8/10;
-    justify-self: center;
-    position: relative;
-    top: -30%;
-    box-shadow: var(--perfect-box-shadow);
-    font-family: var(--font);
-
+  border-style: none;
+  width: 25vh;
+  height: 9vh;
+  border-radius: 40px;
+  background-color: #f7ca13;
+  font-size: 2.5vh;
+  color: black;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+  grid-column: 3/5;
+  grid-row: 8/10;
+  justify-self: center;
+  position: relative;
+  top: -30%;
+  box-shadow: var(--perfect-box-shadow);
+  font-family: var(--font);
 }
 
 .button:hover {
-    transform: scale(1.1);
-    transition: all 0.5s ease-out;
+  transform: scale(1.1);
+  transition: all 0.5s ease-out;
 }
-
 
 .header {
-    display: grid;
-    grid-auto-rows: 120px;
-    grid-template-columns: repeat(10,1fr);
-    width: 100%;
-    grid-column: 1/10;
-    cursor: pointer;
+  display: grid;
+  grid-auto-rows: 120px;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100%;
+  grid-column: 1/10;
+  cursor: pointer;
 }
-

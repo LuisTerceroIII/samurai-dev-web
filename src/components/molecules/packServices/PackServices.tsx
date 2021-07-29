@@ -7,7 +7,6 @@ import Service from "./types/Service";
 import * as styles from "./styles/packServices.module.css";
 //TODO: SACAR QUERY DE AQUI, LLEVAR A SERVICE Y HACER LLEGAR AQUI!
 const PackServices = () => {
-
   const query = useStaticQuery(graphql`
     query servicesPacksData {
       site {

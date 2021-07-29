@@ -1,33 +1,33 @@
 :root {
-    --backgroud-color: #bfdbed;
-    --font: Alef, serif;
+  --backgroud-color: #bfdbed;
+  --font: Alef, serif;
 }
 
 .header {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(7, 1fr);
-    width: 100%;
-   /* background-color: var(--backgroud-color);*/
-    /*border: 5px solid blue;*/
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(7, 1fr);
+  width: 100%;
+  /* background-color: var(--backgroud-color);*/
+  /*border: 5px solid blue;*/
 }
 
 .menu {
-    max-width: 85%;
-    /* border: 5px solid red;*/
-    grid-column: 5/8;
-    align-self: center;
-    margin-left: 13%;
+  max-width: 85%;
+  /* border: 5px solid red;*/
+  grid-column: 5/8;
+  align-self: center;
+  margin-left: 13%;
 }
 
 .logo {
-    /* border: 2px solid chartreuse;*/
-    max-width: 85%;
-    max-height: 100%;
-    overflow: visible !important;
-    position: relative;
-    left: 22%;
-    top: 10%;
+  /* border: 2px solid chartreuse;*/
+  max-width: 85%;
+  max-height: 100%;
+  overflow: visible !important;
+  position: relative;
+  left: 22%;
+  top: 10%;
 }
 
 /*

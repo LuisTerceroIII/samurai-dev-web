@@ -1,7 +1,7 @@
 import * as React from "react";
 // @ts-ignore
 import * as styles from "./styles/serviceCard.module.css";
-import {GatsbyImage, getImage, StaticImage} from "gatsby-plugin-image";
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
 import Title from "../../atoms/Title/Title";
 import Paragraph from "../../atoms/Paragraph/Paragraph";
 import IconBar from "../IconBar/IconBar";

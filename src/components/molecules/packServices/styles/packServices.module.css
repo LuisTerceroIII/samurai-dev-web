@@ -1,64 +1,64 @@
 .grid {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 1fr;
-    justify-items: center;
-    padding: 0% 15% 0% 15%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  padding: 0% 15% 0% 15%;
 }
 
 .titleIconContainer {
-/*    border: 5px solid green;*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    height: fit-content;
-    cursor: pointer;
-    align-self: center;
-    justify-self: center;
-    width: 80%;
-    gap: 15px;
+  /*    border: 5px solid green;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  align-self: center;
+  justify-self: center;
+  width: 80%;
+  gap: 15px;
 }
 
 .titleBox {
-    min-height: 21vh;
-    max-height: 25vh;;
-    background-color: #f6f7eb;
-    border-radius: 20px;
-    padding: 7%;
-    box-shadow: -1px 0px 34px -11px rgb(193, 165, 193);
+  min-height: 21vh;
+  max-height: 25vh;
+  background-color: #f6f7eb;
+  border-radius: 20px;
+  padding: 7%;
+  box-shadow: -1px 0px 34px -11px rgb(193, 165, 193);
 }
 
 .serviceName {
-    font-family: var(--font);
-    font-weight: 500;
-    text-transform: uppercase;
-    text-align: center;
-    align-self: center;
-    font-size: 4vh;
-    text-shadow: 1px 0px 20px rgba(39,36,38,0.57);
-    white-space: break-spaces;
+  font-family: var(--font);
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  align-self: center;
+  font-size: 4vh;
+  text-shadow: 1px 0px 20px rgba(39, 36, 38, 0.57);
+  white-space: break-spaces;
 }
 
 .iconContainer {
-    color: var(--select-opt-menu-color);
-    height: 60%;
-    font-size: 2em;
-    cursor: pointer;
+  color: var(--select-opt-menu-color);
+  height: 60%;
+  font-size: 2em;
+  cursor: pointer;
 }
 
 .invertIconContainer {
-    font-size: 2em;
-    cursor: pointer;
-    transform: rotate(180deg);
-    position: relative;
+  font-size: 2em;
+  cursor: pointer;
+  transform: rotate(180deg);
+  position: relative;
 }
 
 .paragraph {
-    grid-column: 1/4;
-    font-family: var(--font);
-    line-height: var(--desktop-line-height);
-    font-size: var(--desktop-text-size);
-    transition: all 1s ease;
-    text-align: center;
+  grid-column: 1/4;
+  font-family: var(--font);
+  line-height: var(--desktop-line-height);
+  font-size: var(--desktop-text-size);
+  transition: all 1s ease;
+  text-align: center;
 }

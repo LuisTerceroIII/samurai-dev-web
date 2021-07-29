@@ -23,7 +23,10 @@ const ServicesView: React.FC<ServiceProps> = ({ servicesCardsData }) => {
         onClick={() => console.log("Button packs services")}
       />
       <Title cssClass={styles.thirdTitle} content={"Específicos"} />
-      <ServicesCards servicesCardsData={servicesCardsData} cssClass={styles.servicesCards} />
+      <ServicesCards
+        servicesCardsData={servicesCardsData}
+        cssClass={styles.servicesCards}
+      />
     </section>
   );
 };
