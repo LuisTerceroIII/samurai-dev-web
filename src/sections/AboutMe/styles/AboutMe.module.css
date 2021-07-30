@@ -20,7 +20,7 @@
 .paragraph {
   color: var(--text-color);
   font-family: var(--font);
-  font-size: var(--desktop-text-size);
+  font-size: var(--responsive-font-size);
   text-align: center;
   padding: 0% 10% 0% 10%;
   line-height: var(--desktop-line-height);

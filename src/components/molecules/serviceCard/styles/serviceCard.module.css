@@ -23,7 +23,8 @@
   grid-row: 1/2;
   justify-self: start;
   font-family: var(--font);
-  margin-left: 4%;
+  margin-left: 3%;
+  transform: translateY(-150%);
 }
 
 .imageBox {
@@ -67,6 +68,7 @@
   padding-right: 5%;
   position: relative;
   top: -24%;
+  transform: translateY(0%);
 }
 
 .iconBar {

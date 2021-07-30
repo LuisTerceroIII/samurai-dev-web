@@ -9,7 +9,7 @@ html {
 html {
   /* background: rgb(49,180,124);
     background: linear-gradient(90deg, rgba(49,180,124,0.6670869031206232) 4%, rgba(126,175,108,0.4429972672662815) 43%, rgba(0,236,255,0.2497199563419118) 74%);*/
-  background: #f6f7eb;
+  background: #bfdbed;
   /*background: linear-gradient(*/
   /*  90deg,*/
   /*  rgba(131, 58, 180, 0.4738095921962535) 0%,*/
@@ -23,8 +23,9 @@ html {
   --title-color: #6762a6;
   --secondary-title-color: #3d80b2;
   --select-opt-menu-color: #6762a6;
-  --text-color: #404137;
+  --text-color: #33342c;
   --desktop-text-size: 3vh;
   --desktop-line-height: 6.5vh;
   --perfect-box-shadow: -1px 0px 34px -11px rgba(0, 0, 0, 1);
+  --responsive-font-size : clamp(1.3rem, 2vw, 1.5rem);
 }

@@ -1,30 +1,27 @@
 /*
 
-Esta hoja de estilo contiene todos los estilos para desktop Landing.
+Esta hoja de estilo contiene todos los estilos para Landing.
 */
 
-:root {
-  --backgroud-color: #bfdbed;
-  --font: Alef, serif;
-}
-
-.grid {
+/*.grid {
   display: grid;
   grid-auto-columns: 1fr;
   grid-auto-rows: 100px;
-  /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(191,219,237,0.725910432532388) 0%, rgba(0,212,255,0.6194678555015756) 100%);*/
+  !*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(191,219,237,0.725910432532388) 0%, rgba(0,212,255,0.6194678555015756) 100%);*!
   height: 100%;
   margin-top: -8%;
 }
 
 .title {
+  grid-area: title;
   color: var(--title-color);
   text-align: left;
   transition: transform 0.2s ease;
   grid-row: 3/4;
   grid-column: 1/7;
   align-self: center;
-  font-size: 5.2vh;
+  !*font-size: 5.2vh;*!
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
   font-family: var(--font);
   font-weight: 550;
   word-spacing: 2px;
@@ -34,8 +31,9 @@ Esta hoja de estilo contiene todos los estilos para desktop Landing.
 }
 
 .paragraph {
+  grid-area: paragraph;
   color: var(--text-color);
-  font-size: var(--desktop-text-size);
+  font-size: var(--responsive-font-size);
   grid-row: 4/8;
   grid-column: 2/8;
   font-family: var(--font);
@@ -50,6 +48,7 @@ Esta hoja de estilo contiene todos los estilos para desktop Landing.
   max-width: 92%;
 }
 .image {
+  grid-area: image;
   grid-column: 7/10;
   grid-row: 3/8;
   overflow: visible;
@@ -62,6 +61,7 @@ Esta hoja de estilo contiene todos los estilos para desktop Landing.
   max-width: 90% !important;
 }
 .button {
+  grid-area: button;
   border-style: none;
   width: 25vh;
   height: 9vh;
@@ -92,13 +92,133 @@ Esta hoja de estilo contiene todos los estilos para desktop Landing.
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+}*/
+.grid {
+  display: grid;
+  grid-template-columns: .2fr repeat(2,1fr) .5fr .5fr .5fr;
+  grid-template-rows: .3fr .2fr repeat(4,.3fr);
+  /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(191,219,237,0.725910432532388) 0%, rgba(0,212,255,0.6194678555015756) 100%);*/
+  height: 100%;
+  margin-top: -8%;
+  grid-template-areas:
+          " . . . . . . "
+          " . . . . . . "
+          ". title title title  . . "
+          ". paragraph paragraph paragraph image . "
+          ". button button . . . ";
 }
 
-.header {
-  display: grid;
-  grid-auto-rows: 120px;
-  grid-template-columns: repeat(10, 1fr);
-  width: 100%;
-  grid-column: 1/10;
-  cursor: pointer;
+.title {
+  grid-area: title;
+  color: var(--title-color);
+  transition: transform 0.2s ease;
+
+  /*font-size: 5.2vh;*/
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-family: var(--font);
+  font-weight: 650;
+  word-spacing: 2px;
+  position: relative;
+  text-align: left;
 }
+
+.paragraph {
+  grid-area: paragraph;
+  color: var(--text-color);
+  font-size: var(--responsive-font-size);
+  font-family: var(--font);
+  line-height: var(--desktop-line-height);
+  word-spacing: 0.8vh;
+  text-align: left;
+  white-space: break-spaces;
+  position: relative;
+  padding-right: 10%;
+  transform: translateY(-8%);
+}
+.image {
+  grid-area: image;
+  overflow: visible;
+  align-self: center;
+  position: relative;
+  transform: scale(2.1) translateY(-20%) translateX(5%);
+}
+.image img {
+
+}
+.button {
+  grid-area: button;
+  border-style: none;
+  width: 25vh;
+  height: 9vh;
+  border-radius: 40px;
+  background-color: #f7ca13;
+  font-size: 2.5vh;
+  color: black;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+  justify-self: center;
+  position: relative;
+  box-shadow: var(--perfect-box-shadow);
+  font-family: var(--font);
+  display: flex;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-out;
+}
+
+.button p {
+  font-family: var(--font);
+  align-self: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+@media only screen and (max-width: 1450px) {
+  .image {
+    transform: scale(2.1) translateY(-25%) translateX(5%);
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .image {
+    transform: scale(2.1) translateY(-25%) translateX(5%);
+  }
+}
+@media only screen and (max-width: 1000px) {
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    gap: 0px;
+
+  }
+
+  .title {
+    text-align: center;
+    padding: 0% 10% 0% 10%;
+  }
+  .paragraph {
+    text-align: center;
+    padding: 0% 10% 0% 10%;
+    line-height: 4.5vh;
+  }
+  .image {
+    transform: scale(.7) ;
+    max-width: fit-content;
+    height: fit-content;
+    margin: -5%;
+  }
+  .button {
+    transform: scale(.7);
+  }
+  .button:hover {
+    transform: scale(.8);
+  }
+}
+
+

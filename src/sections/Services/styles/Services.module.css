@@ -72,7 +72,7 @@
   align-items: stretch;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 900px) {
   .servicesCards {
     min-width: 90%;
     display: grid;

@@ -17,18 +17,25 @@
   cursor: pointer;
   align-self: center;
   justify-self: center;
-  width: 80%;
+  min-width: 75%;
+  max-width: 75%;
   gap: 15px;
+
+
 }
 
 .titleBox {
   min-height: 21vh;
   max-height: 25vh;
-  background-color: #f6f7eb;
+  background-color: #faf6f6;
   border-radius: 20px;
   padding: 7%;
   box-shadow: -1px 0px 34px -11px rgb(193, 165, 193);
   transition: all 0.5s ease-out;
+  min-width: 100%;
+  max-width: 100%;
+  font-size: clamp(12px,22px,1.5vh);
+
 }
 .titleBox:hover {
   transform: scale(1.1);
@@ -40,7 +47,7 @@
   text-transform: uppercase;
   text-align: center;
   align-self: center;
-  font-size: 4vh;
+  font-size: 2.7em;
   text-shadow: 1px 0px 20px rgba(39, 36, 38, 0.57);
   white-space: break-spaces;
 }
@@ -63,7 +70,65 @@
   grid-column: 1/4;
   font-family: var(--font);
   line-height: var(--desktop-line-height);
-  font-size: var(--desktop-text-size);
+  /*font-size: 1.6vw;*/
+  font-size: var(--responsive-font-size);
+  color: var(--text-color);
   transition: all 1s ease;
   text-align: center;
+  justify-self: left;
+  width: fit-content;
+}
+
+
+@media only screen and (max-width: 1250px) {
+  .titleIconContainer {
+    transform: scale(1);
+  }
+  .serviceName {
+    font-size: 2.2em;
+  }
+
+  .paragraph {
+    line-height: var(--desktop-line-height);
+
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .titleIconContainer {
+    transform: scale(1);
+  }
+  .serviceName {
+    font-size: 1.7em;
+    transform: translateY(50%);
+  }
+}
+@media only screen and (max-width: 690px) {
+  .titleIconContainer {
+    transform: scale(1);
+  }
+  .serviceName {
+    font-size: 1.3em;
+    transform: translateY(90%);
+  }
+
+}
+@media only screen and (max-width: 520px) {
+  .titleIconContainer {
+    transform: scale(1);
+  }
+  .serviceName {
+    font-size: 1.29em;
+    transform: translateY(90%);
+  }
+}
+@media only screen and (max-width: 490px) {
+  .titleIconContainer {
+    transform: scale(1);
+  }
+  .serviceName {
+    font-size: .9em;
+    transform: translateY(110%);
+  }
+
 }

@@ -4,20 +4,23 @@
 }
 
 .navBarGrid {
-    display: grid;
+    display: flex;
     /*    border: 2px solid blue;*/
-    max-width: 100%;
-    grid-auto-rows: 1fr;
-    grid-template-columns: repeat(4, 1fr);
+    max-width: fit-content;
+    min-width: fit-content;
     justify-items: center;
+    gap: 20px;
 }
 
 .navBarGrid a {
     /*    border: 1px dotted black ;*/
     cursor: pointer;
     font-family: var(--font);
-    font-size: 3vh;
+    max-width: fit-content;
+    min-width: fit-content;
     text-shadow: 2px 1px 48px rgba(251,228,232,0.88);
+    font-size: clamp(1rem, 2vw, 1.3rem);
+
 }
 
 .navBarGrid a:after {
