@@ -116,6 +116,8 @@ Esta hoja de estilo contiene todos los estilos para Landing.
 
   .title {
     text-align: center;
+    position: relative;
+    top: 3%;
   }
   .paragraph {
     text-align: center;
@@ -128,6 +130,8 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   }
   .button {
     font-size: 3vw;
+    min-width: 22%;
+    max-width: 22%;
   }
   .button:hover {
 
@@ -140,10 +144,17 @@ Esta hoja de estilo contiene todos los estilos para Landing.
     min-width: 28%;
     max-width: 28%;
   }
+  .title {
+    padding: 2% 3% 0% 3%;
+  }
+  .paragraph {
+    position: relative;
+    top: -5%;
+  }
 
   .grid {
     grid-template-columns: 1fr;
-    grid-template-rows: .8fr .1fr .1fr .1fr;
+    grid-template-rows: .8fr .1fr .1fr .2fr;
   }
 }
 
