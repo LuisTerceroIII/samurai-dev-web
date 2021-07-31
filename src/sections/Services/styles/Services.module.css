@@ -80,4 +80,10 @@
     grid-auto-rows: auto;
     justify-items: center;
   }
+  .button {
+    transform: scale(.7);
+  }
+  .button:hover {
+    transform: scale(.8);
+  }
 }
