@@ -138,18 +138,39 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 670px) {
   .button {
     font-size: 4vw;
     min-width: 28%;
     max-width: 28%;
   }
   .title {
-    padding: 2% 3% 0% 3%;
+    padding: 0% 3% 0% 3%;
   }
   .paragraph {
     position: relative;
     top: -5%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: .9fr .1fr .1fr .2fr;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .button {
+    font-size: 4vw;
+    min-width: 28%;
+    max-width: 28%;
+    position: relative;
+    top: -40%;
+  }
+  .title {
+    padding: 0% 1% 0% 1%;
+  }
+  .paragraph {
+    position: relative;
+    top: 1%;
   }
 
   .grid {
