@@ -65,7 +65,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   max-height: 70%;
   border-radius: 70px;
   background-color: #f7ca13;
-  font-size: 1.6vw;
+  font-size: 1.4vw;
   color: black;
   transition: all 0.5s ease-out;
   cursor: pointer;
@@ -166,6 +166,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
     max-width: 28%;
     position: relative;
     top: -30%;
+    transform: scale(1.1);
   }
   .title {
     padding: 0% 1% 0% 1%;
