@@ -4,7 +4,6 @@
   grid-template-rows: 1fr;
   justify-items: center;
   padding: 0% 15% 0% 15%;
-
 }
 
 .titleIconContainer {
@@ -20,13 +19,11 @@
   min-width: 75%;
   max-width: 75%;
   gap: 15px;
-
-
 }
 
 .titleBox {
-  min-height: 21vh;
-  max-height: 25vh;
+  min-height: 40%;
+  max-height: 50%;
   background-color: #faf6f6;
   border-radius: 20px;
   padding: 7%;
@@ -34,8 +31,6 @@
   transition: all 0.5s ease-out;
   min-width: 100%;
   max-width: 100%;
-  font-size: clamp(12px,22px,1.5vh);
-
 }
 .titleBox:hover {
   transform: scale(1.1);
@@ -47,9 +42,8 @@
   text-transform: uppercase;
   text-align: center;
   align-self: center;
-  font-size: 2.7em;
+  font-size: 3vw;
   text-shadow: 1px 0px 20px rgba(39, 36, 38, 0.57);
-  white-space: break-spaces;
 }
 
 .iconContainer {
@@ -79,18 +73,15 @@
   width: fit-content;
 }
 
-
 @media only screen and (max-width: 1250px) {
   .titleIconContainer {
     transform: scale(1);
   }
   .serviceName {
-    font-size: 2.2em;
   }
 
   .paragraph {
     line-height: var(--desktop-line-height);
-
   }
 }
 
@@ -99,8 +90,6 @@
     transform: scale(1);
   }
   .serviceName {
-    font-size: 1.7em;
-    transform: translateY(50%);
   }
 }
 @media only screen and (max-width: 690px) {
@@ -108,46 +97,35 @@
     transform: scale(1);
   }
   .serviceName {
-    font-size: 1.3em;
-    transform: translateY(90%);
   }
 
   .paragraph {
     line-height: var(--mobile-line-height);
   }
-
 }
 @media only screen and (max-width: 520px) {
   .titleIconContainer {
     transform: scale(1);
   }
   .serviceName {
-    font-size: 1.29em;
-    transform: translateY(90%);
   }
 }
 @media only screen and (max-width: 490px) {
-  .titleIconContainer {
-    transform: scale(1);
+  .titleBox {
+    min-height: 40%;
+    max-height: 50%;
   }
   .serviceName {
-    font-size: .9em;
-    transform: translateY(110%);
+    font-size: 3vw;
   }
-
 }
 
 @media only screen and (max-width: 360px) {
-
   .serviceName {
-    font-size: .7em;
-    transform: translateY(110%);
   }
   .titleBox {
-    min-height: 100px;
   }
   .paragraph {
     line-height: var(--mobile-line-height);
   }
-
 }
