@@ -129,9 +129,11 @@ Esta hoja de estilo contiene todos los estilos para Landing.
     transform: scale(.7) translateY(15%);
   }
   .button {
-    font-size: 3vw;
-    min-width: 22%;
-    max-width: 22%;
+    font-size: 1.8vw;
+    min-width: 25%;
+    max-width: 25%;
+    min-height: 50%;
+    max-height: 50%;
   }
   .button:hover {
 
@@ -140,7 +142,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
 
 @media only screen and (max-width: 670px) {
   .button {
-    font-size: 4vw;
+    font-size: 3.5vw;
     min-width: 28%;
     max-width: 28%;
   }
