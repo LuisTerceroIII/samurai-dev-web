@@ -140,6 +140,11 @@ Esta hoja de estilo contiene todos los estilos para Landing.
     min-width: 28%;
     max-width: 28%;
   }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: .8fr .1fr .1fr .1fr;
+  }
 }
 
 
