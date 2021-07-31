@@ -105,7 +105,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .6fr .1fr .2fr .2fr;
+    grid-template-rows: .8fr .1fr .2fr .2fr;
     grid-template-areas:
       "image"
       "title"
