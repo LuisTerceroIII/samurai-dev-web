@@ -18,11 +18,14 @@ const AboutMeView: React.FC<AboutMeProps> = ({
         src={"../../assets/images/AboutMe/aboutMe.png"}
         alt={"me"}
         className={styles.image}
+        placeholder="blurred"
+        objectFit={"contain"}
       />
       <StaticImage
         src={"../../assets/images/AboutMe/iconCV.png"}
         alt={"icon CV"}
         className={styles.icon}
+        objectFit={"contain"}
       />
     </section>
   );

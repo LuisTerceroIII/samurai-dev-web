@@ -114,11 +114,10 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   transition: transform 0.2s ease;
 
   /*font-size: 5.2vh;*/
-  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-size: clamp(1.25rem, 3vw, 2.5rem);
   font-family: var(--font);
   font-weight: 650;
   word-spacing: 2px;
-  position: relative;
   text-align: left;
 }
 
@@ -190,31 +189,30 @@ Esta hoja de estilo contiene todos los estilos para Landing.
 @media only screen and (max-width: 1000px) {
 
   .grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2%;
-    gap: 0px;
-
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .1fr .5fr .2fr;
+    grid-template-areas:
+      "image"
+      "title"
+      "paragraph"
+      "button";
+    max-height: fit-content;
   }
 
   .title {
     text-align: center;
-    padding: 0% 10% 0% 10%;
   }
   .paragraph {
     text-align: center;
-    padding: 0% 10% 0% 10%;
-    line-height: 4.5vh;
+    padding: 4% 4% 0% 4%;
+    line-height: var(--mobile-line-height);
   }
   .image {
-    transform: scale(.7) ;
-    max-width: fit-content;
-    height: fit-content;
-    margin: -5%;
+    transform: scale(.7) translateY(15%);
   }
   .button {
-    transform: scale(.7);
+    transform: scale(.75);
   }
   .button:hover {
     transform: scale(.8);

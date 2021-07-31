@@ -112,6 +112,10 @@
     transform: translateY(90%);
   }
 
+  .paragraph {
+    line-height: var(--mobile-line-height);
+  }
+
 }
 @media only screen and (max-width: 520px) {
   .titleIconContainer {
@@ -129,6 +133,21 @@
   .serviceName {
     font-size: .9em;
     transform: translateY(110%);
+  }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+  .serviceName {
+    font-size: .7em;
+    transform: translateY(110%);
+  }
+  .titleBox {
+    min-height: 100px;
+  }
+  .paragraph {
+    line-height: var(--mobile-line-height);
   }
 
 }
