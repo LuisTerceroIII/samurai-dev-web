@@ -28,11 +28,13 @@
 
 .button {
   border-style: none;
-  width: 25vh;
-  height: 8vh;
+  min-width: 20%;
+  max-width: 20%;
+  min-height: 70%;
+  max-height: 70%;
   border-radius: 40px;
   background-color: #b893ff;
-  font-size: 2.5vh;
+  font-size: 1.6vw;
   color: black;
   transition: all 0.5s ease-out;
   cursor: pointer;
@@ -72,7 +74,7 @@
   align-items: stretch;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .servicesCards {
     min-width: 90%;
     display: grid;
@@ -81,9 +83,16 @@
     justify-items: center;
   }
   .button {
-    transform: scale(.7);
+    font-size: 3vw;
   }
-  .button:hover {
-    transform: scale(.8);
+
+}
+
+@media only screen and (max-width: 600px) {
+  .button {
+    font-size: 4vw;
+    min-width: 28%;
+    max-width: 28%;
   }
 }
+
