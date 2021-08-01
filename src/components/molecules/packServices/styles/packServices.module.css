@@ -120,12 +120,23 @@
   }
 }
 
-@media only screen and (max-width: 360px) {
-  .serviceName {
+@media only screen and (max-width: 380px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
   }
-  .titleBox {
+  .titleIconContainer {
+    grid-area: titleIcon;
+    display: flex;
+    flex-direction: column;
   }
+  .iconContainer {
+    position: relative;
+    transform: translateY(-40%);
+  }
+
   .paragraph {
+    grid-area: paragraph;
     line-height: var(--mobile-line-height);
   }
 }
