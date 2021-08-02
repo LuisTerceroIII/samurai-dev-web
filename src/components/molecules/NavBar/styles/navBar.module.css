@@ -10,6 +10,7 @@
     min-width: fit-content;
     justify-items: center;
     gap: 20px;
+    flex-wrap: nowrap;
 }
 
 .navBarGrid a {
@@ -19,7 +20,7 @@
     max-width: fit-content;
     min-width: fit-content;
     text-shadow: 2px 1px 48px rgba(251,228,232,0.88);
-    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-size: clamp(1rem, 2vw, 1.1rem);
 
 }
 

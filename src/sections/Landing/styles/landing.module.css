@@ -9,7 +9,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   grid-template-rows: .3fr .2fr repeat(4,.3fr);
   /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(191,219,237,0.725910432532388) 0%, rgba(0,212,255,0.6194678555015756) 100%);*/
   min-height: 100vh;
-  margin-top: -10%;
+  margin-top: -6%;
   grid-template-areas:
           " . . . . . . "
           " . . . . . . "
@@ -119,6 +119,10 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   .image {
     transform: scale(2.1) translateY(-25%) translateX(5%);
   }
+  .grid:before {
+    bottom: -50%;
+    min-height: 150vh;
+  }
 }
 @media only screen and (max-width: 1100px) {
 
@@ -134,8 +138,8 @@ Esta hoja de estilo contiene todos los estilos para Landing.
     max-height: fit-content;
   }
   .grid:before {
-    bottom: -40%;
-    min-height: 150vh;
+    bottom: -70%;
+    min-height: 160vh;
   }
 
   .title {
@@ -180,8 +184,8 @@ Esta hoja de estilo contiene todos los estilos para Landing.
     grid-template-rows: .9fr .1fr .1fr .2fr;
   }
   .grid:before {
-    bottom: -40%;
-    min-height: 150vh;
+    bottom: -80%;
+    min-height: 160vh;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -206,8 +210,8 @@ Esta hoja de estilo contiene todos los estilos para Landing.
     grid-template-rows: .8fr .1fr .1fr .2fr;
   }
   .grid:before {
-    bottom: -70%;
-    min-height: 150vh;
+    bottom: -90%;
+    min-height: 190vh;
   }
 }
 
