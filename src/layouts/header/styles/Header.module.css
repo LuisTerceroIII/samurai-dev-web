@@ -91,6 +91,7 @@
     margin: 0;
     justify-self: center;
     align-self: center;
+    transform: translateY(-70%);
   }
 
 }
