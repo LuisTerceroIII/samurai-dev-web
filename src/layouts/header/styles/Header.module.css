@@ -6,7 +6,7 @@
 .header {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr .5fr .5fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr .5fr;
   grid-template-areas: "logo .  .  . menu .";
   min-width: fit-content;
   max-width: fit-content;
@@ -17,6 +17,9 @@
 .menu {
   align-self: center;
   grid-area: menu;
+
+
+
 }
 
 .logo {
@@ -30,7 +33,10 @@
   top: 5%;
 
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1250px) {
+  .menu {
+    margin-left: -30%;
+  }
   .logo {
     /* border: 2px solid chartreuse;*/
     grid-area: logo;
@@ -61,24 +67,30 @@
 @media only screen and (max-width: 700px) {
 
   .header {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr .5fr;
+    grid-template-areas:
+            "logo"
+            "menu";
     min-width: 100%;
+    max-width: 100%;
     position: relative;
-    top: 7%;
+    transform: translateY(20%);
   }
   .logo {
-    min-width: 30vw;
-    margin: 0;
+    min-width: 40%;
+    max-width: 40%;
     position: relative;
     left: 50%;
-    transform: translateX(-50%) translateY(-10%);
+    transform: translateX(-50%);
+
   }
   .menu {
+    min-width: 50%;
+    max-width: 50%;
     margin: 0;
+    justify-self: center;
     align-self: center;
-    position: relative;
-    transform: translateY(-80%);
   }
 
 }
@@ -94,16 +106,17 @@
   }
   .logo {
     min-width: 30vw;
-    margin: 0;
     position: relative;
     left: 50%;
     transform: translateX(-50%) translateY(-10%);
   }
   .menu {
+    min-width: 100%;
+    max-width: 100%;
     margin: 0;
+    justify-self: center;
     align-self: center;
-    position: relative;
-    transform: translateY(-200%);
+
   }
 }
 
