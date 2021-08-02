@@ -215,4 +215,12 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   }
 }
 
+@media all and (orientation:landscape) {
+  /* Style adjustments for portrait mode goes here */
+  .grid:before {
+    bottom: -190%;
+    min-height: 250vh;
+  }
+}
+
 
