@@ -122,7 +122,7 @@ En este sitio obtendrás la información necesaria para saber  de qué manera pu
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `landing`,
-        path: `${__dirname}/src/assets/images/landing`,
+        path: `${__dirname}/src/assets/images/Landing`,
       },
     },
     {
