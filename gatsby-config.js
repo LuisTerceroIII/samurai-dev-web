@@ -121,6 +121,13 @@ En este sitio obtendrás la información necesaria para saber  de qué manera pu
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `landing`,
+        path: `${__dirname}/src/assets/images/landing`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `Services`,
         path: `${__dirname}/src/assets/images/Services`,
       },

@@ -8,15 +8,35 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   grid-template-columns: .2fr repeat(2,1fr) .5fr .5fr .5fr;
   grid-template-rows: .3fr .2fr repeat(4,.3fr);
   /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(191,219,237,0.725910432532388) 0%, rgba(0,212,255,0.6194678555015756) 100%);*/
-  height: 100%;
-  margin-top: -8%;
+  min-height: 100vh;
+  margin-top: -10%;
   grid-template-areas:
           " . . . . . . "
           " . . . . . . "
           ". title title title  . . "
           ". paragraph paragraph paragraph image . "
           ". button button . . . ";
+
 }
+
+.grid:before {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  min-width: 100%;
+  min-height: 100vh;
+  z-index: -1;
+  background: url("../../../assets/images/Landing/LandingWaves.svg") no-repeat top left;
+
+  background-size: cover;
+
+}
+
+#svg {
+
+}
+
+
 
 .title {
   grid-area: title;
@@ -105,13 +125,17 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .8fr .1fr .2fr .2fr;
+    grid-template-rows: .8fr .1fr .2fr .2fr .1fr;
     grid-template-areas:
       "image"
       "title"
       "paragraph"
       "button";
     max-height: fit-content;
+  }
+  .grid:before {
+    bottom: -40%;
+    min-height: 150vh;
   }
 
   .title {
@@ -135,9 +159,6 @@ Esta hoja de estilo contiene todos los estilos para Landing.
     min-height: 50%;
     max-height: 50%;
   }
-  .button:hover {
-
-  }
 }
 
 @media only screen and (max-width: 670px) {
@@ -158,8 +179,12 @@ Esta hoja de estilo contiene todos los estilos para Landing.
     grid-template-columns: 1fr;
     grid-template-rows: .9fr .1fr .1fr .2fr;
   }
+  .grid:before {
+    bottom: -40%;
+    min-height: 150vh;
+  }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
   .button {
     font-size: 4vw;
     min-width: 28%;
@@ -179,6 +204,10 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: .8fr .1fr .1fr .2fr;
+  }
+  .grid:before {
+    bottom: -70%;
+    min-height: 200vh;
   }
 }
 

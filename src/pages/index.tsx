@@ -11,8 +11,8 @@ const IndexPage = (): JSX.Element => {
     <div className={styles.global}>
       <Header>
         <Landing />
-        <AboutMe />
-        <Services />
+       {/* <AboutMe />
+        <Services />*/}
       </Header>
     </div>
   );

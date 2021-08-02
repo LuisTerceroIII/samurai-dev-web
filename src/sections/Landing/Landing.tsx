@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { pageIsLoad, pageFailOnLoad, openSite } from "../../assets/js/utils";
 // @ts-ignore
 import * as styles from "./styles/landing.module.css";
+import LandingBackground from "./LandingBackground";
 
 const Landing: React.FC = (): JSX.Element => {
   //Gets the data in the gatsby-config file
@@ -83,12 +84,14 @@ const Landing: React.FC = (): JSX.Element => {
     <>
       {isLoading && <h6>Loading...</h6>}
       {isLoad && (
-        <LandingView
-          button={button}
-          paragraph={paragraph}
-          title={title}
-          styles={styles}
-        />
+
+          <LandingView
+              button={button}
+              paragraph={paragraph}
+              title={title}
+              styles={styles}
+          />
+
       )}
       {isError && <h3>ERROR</h3>}
     </>

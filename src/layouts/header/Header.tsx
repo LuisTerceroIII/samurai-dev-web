@@ -14,7 +14,7 @@ const Header: React.FC = ({ children }): JSX.Element => {
           }
           alt={"logo"}
           className={styles.logo}
-          placeholder="blurred"
+          placeholder="TRACED_SVG"
           layout="fullWidth"
           objectFit={"contain"}
         />

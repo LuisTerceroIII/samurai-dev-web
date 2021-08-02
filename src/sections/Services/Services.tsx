@@ -49,7 +49,6 @@ const Services = () => {
           node {
             childImageSharp {
               gatsbyImageData(
-                formats: PNG
                 placeholder: BLURRED
                 width: 40
                 transformOptions: { fit: COVER }
@@ -68,7 +67,6 @@ const Services = () => {
           node {
             childImageSharp {
               gatsbyImageData(
-                formats: PNG
                 placeholder: BLURRED
                 width: 40
                 transformOptions: { fit: CONTAIN }
@@ -83,7 +81,6 @@ const Services = () => {
       backendImage: file(relativePath: { regex: "/backend.png/" }) {
         childImageSharp {
           gatsbyImageData(
-            formats: PNG
             height: 130
             width: 130
             placeholder: BLURRED
@@ -94,7 +91,6 @@ const Services = () => {
       frontendImage: file(relativePath: { regex: "/frontend.png/" }) {
         childImageSharp {
           gatsbyImageData(
-            formats: PNG
             height: 130
             width: 130
             placeholder: BLURRED
@@ -105,7 +101,6 @@ const Services = () => {
       fullstackImage: file(relativePath: { regex: "/fullstack.png/" }) {
         childImageSharp {
           gatsbyImageData(
-            formats: PNG
             height: 130
             width: 130
             placeholder: BLURRED
@@ -117,7 +112,6 @@ const Services = () => {
       maintenanceImage: file(relativePath: { regex: "/maintenance.png/" }) {
         childImageSharp {
           gatsbyImageData(
-            formats: PNG
             height: 130
             width: 130
             placeholder: BLURRED
@@ -129,7 +123,6 @@ const Services = () => {
       webDesignImage: file(relativePath: { regex: "/webDesign.png/" }) {
         childImageSharp {
           gatsbyImageData(
-            formats: PNG
             height: 130
             width: 130
             placeholder: BLURRED

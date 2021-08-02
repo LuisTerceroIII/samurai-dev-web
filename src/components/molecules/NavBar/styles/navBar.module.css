@@ -28,6 +28,7 @@
     display: block;
     background-color:  var(--select-opt-menu-color);
     height: 3px;
+    width: 70%;
     border-radius: 10px;
     opacity: 0;
     transform: scaleX(0);
