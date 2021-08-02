@@ -8,7 +8,7 @@ const NavBarView: React.FC<NavBarProps> = ({ options }) => {
   return (
     <nav className={styles.navBarGrid}>
       {options.map((option) => (
-        <a key={uuidv4()}>{option}</a>
+        <p key={uuidv4()}>{option}</p>
       ))}
     </nav>
   );

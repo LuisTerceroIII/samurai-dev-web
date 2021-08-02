@@ -91,7 +91,7 @@
     margin: 0;
     justify-self: center;
     align-self: center;
-    transform: translateY(-70%);
+
   }
 
 }
@@ -99,7 +99,7 @@
 @media only screen and (max-width: 550px) {
 
 }
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 420px) {
   .header {
     display: flex;
     flex-direction: column;
@@ -117,6 +117,8 @@
     margin: 0;
     justify-self: center;
     align-self: center;
+    transform: translateY(-10%);
+
 
   }
 }

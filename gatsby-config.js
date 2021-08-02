@@ -1,11 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: "Samurai dev site",
-    icon: "../../../assets/images/icons/java.png",
     sections: {
       landing: {
         logo: "../../assets/images/samurailogo.png",
-        navOption: ["Sobre mi", "Servicios", "Proyectos", "Contacto"],
+        navOption: [" Sobre mi ", " Servicios ", " Proyectos ", " Contacto "],
         title: {
           content:
             "Hola, bienvenido a mi sitio, soy Luis Espinoza, desarrollador web independiente.",

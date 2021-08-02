@@ -6,11 +6,11 @@
 .navBarGrid {
     display: flex;
 /*    border: 2px solid blue;*/
-    gap: 5%;
+    gap: 10%;
     justify-content: center;
 }
 
-.navBarGrid a {
+.navBarGrid p {
     /*    border: 1px dotted black ;*/
     cursor: pointer;
     font-family: var(--font);
@@ -21,7 +21,7 @@
 
 }
 
-.navBarGrid a:after {
+.navBarGrid p:after {
     content: "";
     display: block;
     background-color:  var(--select-opt-menu-color);
@@ -34,16 +34,15 @@
     margin: auto;
 }
 
-.navBarGrid a:hover::after {
+.navBarGrid p:hover::after {
     opacity: 1;
     transform: scaleX(1.1);
 
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 470px) {
     .navBarGrid {
-        min-width: 110%;
-        max-width: 110%;
-        gap: 15%;
+        gap: 5%;
+        padding: 0% 10% 0% 10%;
     }
 }
