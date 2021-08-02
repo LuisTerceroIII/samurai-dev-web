@@ -184,8 +184,8 @@ Esta hoja de estilo contiene todos los estilos para Landing.
     grid-template-rows: .9fr .1fr .1fr .2fr;
   }
   .grid:before {
-    bottom: -80%;
-    min-height: 160vh;
+    bottom: -85%;
+    min-height: 165vh;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -215,11 +215,11 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   }
 }
 
-@media all and (orientation:landscape) {
+@media (max-width: 750px) and (orientation: landscape) {
   /* Style adjustments for portrait mode goes here */
   .grid:before {
-    bottom: -190%;
-    min-height: 250vh;
+    bottom: -160%;
+    min-height: 190vh;
   }
 }
 
