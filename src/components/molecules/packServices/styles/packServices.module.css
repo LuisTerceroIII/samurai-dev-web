@@ -95,9 +95,9 @@
 }
 @media only screen and (max-width: 690px) {
   .titleIconContainer {
-    transform: scale(1);
   }
   .serviceName {
+
   }
 
   .paragraph {
@@ -112,13 +112,7 @@
   .serviceName {
   }
 }
-@media only screen and (max-width: 490px) {
 
-  .serviceName {
-    font-size: 8vw;
-    font-weight: 600;
-  }
-}
 
 @media only screen and (max-width: 1000px) {
   .grid {
@@ -156,3 +150,24 @@
     font-size: 2.3vw;
   }
 }
+@media only screen and (max-width: 590px) {
+
+  .titleBox {
+    min-width: 100%;
+  }
+
+  .serviceName {
+    font-size: 100%;
+  }
+  .paragraph {
+    line-height: 5.5vh;
+  }
+
+  .iconContainer {
+    font-size: 150%;
+  }
+  .invertIconContainer {
+    font-size: 150%;
+  }
+}
+

@@ -10,29 +10,14 @@
   content: "";
   position: absolute;
   bottom: -5%;
-  min-height: 200vh;
+  min-height: 220vh;
   min-width: 100%;
   max-width: 100%;
-
   z-index: -1;
   background: url("../../../assets/images/Services/backgroundPackServices.svg") no-repeat top left;
   background-size: cover;
 
 }
-/*.grid:after {
-  content: "";
-  position: absolute;
-  bottom: -8.91%;
-  min-width: 100%;
-  max-width: 100%;
-  min-height: 100vh;
-  z-index: -1;
-  background: url("../../../assets/images/Services/backgroundCardsServices.svg") no-repeat top left;
-  background-size: cover;
-  overflow: hidden;
-
-}*/
-
 
 .mainTitle {
   color: var(--title-color);
@@ -119,14 +104,14 @@
   }
   .grid:before {
     bottom: -5%;
-    min-height: 370vh;
+    min-height: 390vh;
   }
 
 }
 @media only screen and (max-width: 800px) {
   .grid:before {
     bottom: -5%;
-    min-height: 270vh;
+    min-height: 400vh;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -135,7 +120,7 @@
   }
   .grid:before {
     bottom: -5%;
-    min-height: 370vh;
+    min-height: 400vh;
   }
 }
 
@@ -150,10 +135,7 @@
   .grid {
     margin-top: 10%;
   }
-  .grid:before {
-    bottom: -5%;
-    min-height: 370vh;
-  }
+
 
   .button {
     font-size: 3vw;
@@ -175,14 +157,22 @@
   .grid {
     margin-top: 10%;
   }
+  .grid:before {
+    bottom: -5%;
+    min-height: 420vh;
+  }
 }
 @media only screen and (max-width: 420px) {
   .grid {
     margin-top: 20%;
   }
 }
-@media only screen and (max-width: 380px) {
-}
-@media only screen and (max-width: 350px) {
+@media (max-width: 700px) and (orientation: landscape) {
+  /* Style adjustments for portrait mode goes here */
+  .grid:before {
+    bottom: -5%;
+    min-height: 430vh;
+  }
+
 }
 
