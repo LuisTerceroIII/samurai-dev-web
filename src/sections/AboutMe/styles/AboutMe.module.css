@@ -13,7 +13,7 @@
 .mainContainer:before {
   content: "";
   position: absolute;
-  bottom: -35%;
+  bottom: -30%;
   min-width: 100%;
   min-height: 120vh;
   z-index: -1;
@@ -99,8 +99,8 @@
   }
 
   .mainContainer:before {
-    bottom: -10%;
-    min-height: 100vh;
+    bottom: -30%;
+    min-height: 110vh;
   }
 
   .icon {
@@ -123,35 +123,32 @@
   }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 700px) {
+  .title {
+    transform: translateY(50%);
+  }
+}
+@media (max-width: 700px) and (orientation: landscape) {
+  /* Style adjustments for portrait mode goes here */
   .mainContainer {
-    gap: 0px;
-    transform: translateY(5%);
+    grid-template-rows: .1fr .8fr .4fr .5fr .1fr;
+  }
+  .paragraph {
+    margin-top: -3%;
+    line-height: 7.5vh;
+  }
+  .image {
+    margin-top: 10%;
   }
 
-  @media (max-width: 700px) and (orientation: landscape) {
-    /* Style adjustments for portrait mode goes here */
-    .mainContainer {
-      grid-template-rows: .1fr .8fr .4fr .5fr .1fr;
-    }
-    .paragraph {
-      margin-top: -3%;
-      line-height: 7.5vh;
-    }
-    .image {
-      margin-top: 10%;
-    }
-
-    .icon {
-      margin-top: 10%;
-    }
-
-    .grid:before {
-      bottom: -180%;
-      min-height: 250vh;
-    }
+  .icon {
+    margin-top: 10%;
   }
 
+  .grid:before {
+    bottom: -180%;
+    min-height: 250vh;
+  }
 }
 @media only screen and (max-width: 620px) {
   .mainContainer {
@@ -160,20 +157,20 @@
   }
 
   .mainContainer:before {
-    bottom: -5%;
+    bottom: -30%;
     min-height: 110vh;
   }
 }
 
-@media only screen and (max-width: 465px) {
+@media only screen and (max-width: 530px) {
   .mainContainer {
     grid-template-rows: .1fr .4fr .3fr .1fr;
   }
-
   .mainContainer:before {
-    bottom: -5%;
+    bottom: -30%;
     min-height: 110vh;
   }
+
   .icon {
     min-width: 10vw;
     max-width: 10vw;
@@ -194,14 +191,14 @@
   }
 }
 
-@media only screen and (max-width: 365px) {
+@media only screen and (max-width: 380px) {
   .mainContainer {
     grid-template-rows: .1fr .4fr .3fr .1fr;
   }
 
   .mainContainer:before {
-    bottom: -5%;
-    min-height: 130vh;
+    bottom: -50%;
+    min-height: 140vh;
   }
 
 }
