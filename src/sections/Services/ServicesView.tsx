@@ -3,7 +3,6 @@ import * as React from "react";
 import * as styles from "./styles/Services.module.css";
 import Title from "../../components/atoms/Title/Title";
 import PackServices from "../../components/molecules/packServices/PackServices";
-import Button from "../../components/atoms/Button/Button";
 import { useEffect } from "react";
 import ServiceProps from "./types/ServiceProps";
 import ServicesCards from "../../components/organisms/servicesCards/ServicesCards";

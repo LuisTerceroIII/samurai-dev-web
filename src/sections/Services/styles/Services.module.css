@@ -6,6 +6,33 @@
   top: -7%;
   margin-bottom: 3%;
 }
+.grid:before {
+  content: "";
+  position: absolute;
+  bottom: -5%;
+  min-height: 200vh;
+  min-width: 100%;
+  max-width: 100%;
+
+  z-index: -1;
+  background: url("../../../assets/images/Services/backgroundPackServices.svg") no-repeat top left;
+  background-size: cover;
+
+}
+/*.grid:after {
+  content: "";
+  position: absolute;
+  bottom: -8.91%;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  z-index: -1;
+  background: url("../../../assets/images/Services/backgroundCardsServices.svg") no-repeat top left;
+  background-size: cover;
+  overflow: hidden;
+
+}*/
+
 
 .mainTitle {
   color: var(--title-color);
@@ -33,7 +60,7 @@
   min-height: 40%;
   max-height: 40%;
   border-radius: 40px;
-  background-color: #b893ff;
+  background-color: #f7ca13;
   font-size: 1.4vw;
   color: black;
   transition: all 0.5s ease-out;
@@ -56,7 +83,7 @@
   transform: translateX(-50%);
 }
 .thirdTitle {
-  color: var(--secondary-title-color);
+  color: #ebebeb;
   font-family: var(--font);
   font-size: 2.3em;
   font-weight: normal;
@@ -87,10 +114,29 @@
     max-width: 20%;
     min-height: 30%;
     max-height: 30%;
-    font-size: 2.5vw;
+    font-size: 2.1vw;
 
   }
+  .grid:before {
+    bottom: -5%;
+    min-height: 370vh;
+  }
 
+}
+@media only screen and (max-width: 800px) {
+  .grid:before {
+    bottom: -5%;
+    min-height: 270vh;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .grid {
+    margin-top: 10%;
+  }
+  .grid:before {
+    bottom: -5%;
+    min-height: 370vh;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -100,5 +146,43 @@
     max-width: 28%;
 
   }
+
+  .grid {
+    margin-top: 10%;
+  }
+  .grid:before {
+    bottom: -5%;
+    min-height: 370vh;
+  }
+
+  .button {
+    font-size: 3vw;
+    min-width: 25%;
+    max-width: 25%;
+    min-height: 30%;
+    max-height: 30%;
+
+  }
+}
+
+@media only screen and (max-width: 515px) {
+  .grid:before {
+    bottom: -5%;
+    min-height: 370vh;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .grid {
+    margin-top: 10%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .grid {
+    margin-top: 20%;
+  }
+}
+@media only screen and (max-width: 380px) {
+}
+@media only screen and (max-width: 350px) {
 }
 
