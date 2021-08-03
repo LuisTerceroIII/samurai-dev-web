@@ -29,6 +29,6 @@ html {
   --desktop-line-height: 6.5vh;
   --perfect-box-shadow: -1px 0px 34px -11px rgba(0, 0, 0, 1);
   --responsive-font-size : clamp(1.1rem, 2vw, 1.5rem);
-  --mobile-line-height: 6.5vh;
+  --mobile-line-height: 6vh;
 }
 
