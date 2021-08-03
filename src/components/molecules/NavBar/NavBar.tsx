@@ -7,16 +7,15 @@ const NavBar = () => {
     query navOption {
       site {
         siteMetadata {
-          sections {
-            landing {
-              navOption
+            navBar {
+              option
+              redirect
             }
-          }
         }
       }
     }
   `);
-  const options = navOptionsQuery.site.siteMetadata.sections.landing.navOption;
+  const options = navOptionsQuery.site.siteMetadata.navBar;
   return <NavBarView options={options} />;
 };
 

@@ -1,3 +1,8 @@
 export default interface NavBarProps {
-    options: string[]
+    options: option[]
+}
+
+interface option {
+    option: string;
+    redirect: string; // url to link
 }

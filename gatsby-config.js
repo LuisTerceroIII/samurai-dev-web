@@ -1,10 +1,22 @@
 module.exports = {
   siteMetadata: {
     title: "Samurai dev site",
+    navBar: [{
+      option : "Sobre mi",
+      redirect : "/aboutMe"
+    },{
+      option :  "Servicios",
+      redirect: "/services"
+    }, {
+      option : "Proyectos",
+      redirect: "/projects"
+    }, {
+      option:"Contacto",
+      redirect: "contact"
+    }],
     sections: {
       landing: {
         logo: "../../assets/images/samurailogo.png",
-        navOption: [" Sobre mi ", " Servicios ", " Proyectos ", " Contacto "],
         title: {
           content:
             "Hola, bienvenido a mi sitio, soy Luis Espinoza, desarrollador web independiente.",

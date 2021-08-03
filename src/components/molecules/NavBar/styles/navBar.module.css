@@ -1,61 +1,58 @@
 :root {
-    --backgroud-color: #bfdbed;
-    --font: Alef, serif;
+  --backgroud-color: #bfdbed;
+  --font: Alef, serif;
 }
 
 .navBarGrid {
-    display: flex;
-/*    border: 2px solid blue;*/
-    gap: 10%;
-    justify-content: center;
+  display: flex;
+  /*    border: 2px solid blue;*/
+  gap: 10%;
+  justify-content: center;
 }
 
-.navBarGrid p {
-    /*    border: 1px dotted black ;*/
-    cursor: pointer;
-    font-family: var(--font);
-    max-width: fit-content;
-    min-width: fit-content;
-    text-shadow: 2px 1px 48px rgba(251,228,232,0.88);
-    font-size: clamp(1.1rem, 1.8vw, 1.2rem);
-
-
+.link {
+  text-decoration: none;
+  color: #090909;
+  cursor: pointer;
+  font-family: var(--font);
+  max-width: fit-content;
+  min-width: fit-content;
+  text-shadow: 2px 1px 48px rgba(251, 228, 232, 0.88);
+  font-size: clamp(1.1rem, 1.8vw, 1.2rem);
+}
+.link:after {
+  content: "";
+  display: block;
+  background-color: var(--select-opt-menu-color);
+  height: 3px;
+  width: 70%;
+  border-radius: 10px;
+  opacity: 0;
+  transform: scaleX(0);
+  transition: all 0.5s ease;
+  margin: auto;
 }
 
-.navBarGrid p:after {
-    content: "";
-    display: block;
-    background-color:  var(--select-opt-menu-color);
-    height: 3px;
-    width: 70%;
-    border-radius: 10px;
-    opacity: 0;
-    transform: scaleX(0);
-    transition: all 0.5s ease;
-    margin: auto;
-}
-
-.navBarGrid p:hover::after {
-    opacity: 1;
-    transform: scaleX(1.1);
-
+.link:hover::after {
+  opacity: 1;
+  transform: scaleX(1.1);
 }
 
 @media only screen and (max-width: 700px) {
-    .navBarGrid {
-        gap: 5%;
-    }
-    .navBarGrid p{
-        padding: 0% 5% 0% 5%;
-    }
+  .navBarGrid {
+    gap: 5%;
+  }
+  .link {
+    padding: 0% 5% 0% 5%;
+  }
 }
 
 @media only screen and (max-width: 470px) {
-    .navBarGrid {
-        gap: 5%;
-        padding: 0% 5% 0% 5%;
-    }
-    .navBarGrid p{
-        padding: 0% 2.5% 0% 2.5%;
-    }
+  .navBarGrid {
+    gap: 5%;
+    padding: 0% 5% 0% 5%;
+  }
+  .link {
+    padding: 0% 2.5% 0% 2.5%;
+  }
 }
