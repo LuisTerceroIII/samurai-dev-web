@@ -3,16 +3,17 @@ import Landing from "../sections/Landing/Landing";
 import Header from "../layouts/header/Header";
 // @ts-ignore
 import * as styles from "../assets/css/global.module.css";
-import AboutMe from "../sections/AboutMe/AboutMe";
-import Services from "../sections/Services/Services";
+import {Helmet} from "react-helmet"
 //TODO: Compartir varibales css desde un archivo.
 const IndexPage = (): JSX.Element => {
   return (
     <div className={styles.global}>
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>Samurai Dev</title>
+        </Helmet>
       <Header>
         <Landing />
-       {/* <AboutMe />
-        <Services />*/}
       </Header>
     </div>
   );

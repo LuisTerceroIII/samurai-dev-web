@@ -1,19 +1,24 @@
 module.exports = {
   siteMetadata: {
     title: "Samurai dev site",
-    navBar: [{
-      option : "Sobre mi",
-      redirect : "/aboutMe"
-    },{
-      option :  "Servicios",
-      redirect: "/services"
-    }, {
-      option : "Proyectos",
-      redirect: "/projects"
-    }, {
-      option:"Contacto",
-      redirect: "contact"
-    }],
+    navBar: [
+      {
+        option: "Sobre mi",
+        redirect: "/aboutMe",
+      },
+      {
+        option: "Servicios",
+        redirect: "/services",
+      },
+      {
+        option: "Proyectos",
+        redirect: "/projects",
+      },
+      {
+        option: "Contacto",
+        redirect: "contact",
+      },
+    ],
     sections: {
       landing: {
         logo: "../../assets/images/samurailogo.png",
@@ -115,6 +120,7 @@ En este sitio obtendrás la información necesaria para saber  de qué manera pu
     "gatsby-plugin-image",
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -141,6 +147,28 @@ En este sitio obtendrás la información necesaria para saber  de qué manera pu
       options: {
         name: `Services`,
         path: `${__dirname}/src/assets/images/Services`,
+      },
+    },
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `Logo`,
+        path: `${__dirname}/src/assets/images/Logo`,
+      },
+    },
+
+
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Samurai dev",
+        short_name: "SamuraiDev",
+        start_url: "/",
+        background_color: "#090808",
+        theme_color: "#f6f6f6",
+        display: "standalone",
+        icon: "src/assets/images/Logo/FAVICON_FAVICON COLOR.png",
       },
     },
   ],

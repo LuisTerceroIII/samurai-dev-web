@@ -8,15 +8,14 @@
     "paragraph"
     "image"
     "icon"
-    " . "
 ;
 }
 .mainContainer:before {
   content: "";
   position: absolute;
-  bottom: -70%;
+  bottom: -35%;
   min-width: 100%;
-  min-height: 160vh;
+  min-height: 120vh;
   z-index: -1;
   background: url("../../../assets/images/AboutMe/background.svg") no-repeat top left;
   background-size: cover;
@@ -130,6 +129,28 @@
     transform: translateY(5%);
   }
 
+  @media (max-width: 700px) and (orientation: landscape) {
+    /* Style adjustments for portrait mode goes here */
+    .mainContainer {
+      grid-template-rows: .1fr .8fr .4fr .5fr .1fr;
+    }
+    .paragraph {
+      margin-top: -3%;
+      line-height: 7.5vh;
+    }
+    .image {
+      margin-top: 10%;
+    }
+
+    .icon {
+      margin-top: 10%;
+    }
+
+    .grid:before {
+      bottom: -180%;
+      min-height: 250vh;
+    }
+  }
 
 }
 @media only screen and (max-width: 620px) {
