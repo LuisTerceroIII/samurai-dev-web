@@ -3,6 +3,7 @@ import LandingProps from "./types/LandingProps";
 import Title from "../../components/atoms/Title/Title";
 import Paragraph from "../../components/atoms/Paragraph/Paragraph";
 import { StaticImage } from "gatsby-plugin-image";
+import  { Link} from "gatsby";
 
 
 const LandingView: React.FC<LandingProps> = ({
@@ -22,9 +23,7 @@ const LandingView: React.FC<LandingProps> = ({
         objectFit={"contain"}
       />
       <Paragraph content={paragraph.content} cssClass={paragraph.cssClass} />
-      <div className={button.cssClass} onClick={button.onClick}>
-        <p>{button.value}</p>{" "}
-      </div>
+        <Link  to={"/aboutMe"} className={button.cssClass}>{button.value}</Link>
     </div>
   );
 };

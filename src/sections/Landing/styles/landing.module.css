@@ -58,8 +58,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
 .button {
   grid-area: button;
   border-style: none;
-  /*width: 25vh;*/
-  /*height: 9vh;*/
+  border: 2px solid red;
   min-width: 25%;
   max-width: 25%;
   min-height: 70%;
@@ -74,7 +73,11 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   position: relative;
   box-shadow: var(--perfect-box-shadow);
   font-family: var(--font);
-  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+
 }
 
 .button:hover {

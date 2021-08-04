@@ -2,27 +2,15 @@
 .mainContainer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: .1fr .8fr .8fr .4fr;
+  grid-template-rows: .1fr .8fr .8fr .5fr;
   grid-template-areas:
     "title"
     "paragraph"
     "image"
     "icon"
 ;
-
-
 }
-/*.mainContainer:before {
-  content: "";
-  position: absolute;
-  bottom: -30%;
-  min-width: 100%;
-  min-height: 120vh;
-  z-index: -1;
-  background: url("../../../assets/images/AboutMe/background.svg") no-repeat top left;
-  background-size: cover;
 
-}*/
 .title {
   grid-area: title;
   color: #225d00;
