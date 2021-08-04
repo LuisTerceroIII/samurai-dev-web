@@ -12,14 +12,12 @@
   max-width: fit-content;
   /* background-color: var(--backgroud-color);*/
   /*border: 5px solid blue;*/
+
 }
 
 .menu {
   align-self: center;
   grid-area: menu;
-
-
-
 }
 
 .logo {

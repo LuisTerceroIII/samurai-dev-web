@@ -9,8 +9,10 @@
     "image"
     "icon"
 ;
+
+
 }
-.mainContainer:before {
+/*.mainContainer:before {
   content: "";
   position: absolute;
   bottom: -30%;
@@ -20,7 +22,7 @@
   background: url("../../../assets/images/AboutMe/background.svg") no-repeat top left;
   background-size: cover;
 
-}
+}*/
 .title {
   grid-area: title;
   color: #225d00;
@@ -59,9 +61,9 @@
 
 @media only screen and (max-width: 1000px) {
   .mainContainer:before {
-    bottom: -60%;
+/*    bottom: -60%;
     min-width: 100%;
-    min-height: 170vh;
+    min-height: 170vh;*/
   /*  display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: .1fr .8fr .5fr .4fr .2fr;
@@ -99,8 +101,8 @@
   }
 
   .mainContainer:before {
-    bottom: -30%;
-    min-height: 110vh;
+/*    bottom: -30%;
+    min-height: 110vh;*/
   }
 
   .icon {
@@ -146,8 +148,8 @@
   }
 
   .mainContainer:before {
-    bottom: -90%;
-    min-height: 140vh;
+/*    bottom: -90%;
+    min-height: 140vh;*/
   }
 }
 @media only screen and (max-width: 620px) {
@@ -157,8 +159,8 @@
   }
 
   .mainContainer:before {
-    bottom: -30%;
-    min-height: 110vh;
+/*    bottom: -30%;
+    min-height: 110vh;*/
   }
 }
 
@@ -167,8 +169,8 @@
     grid-template-rows: .1fr .4fr .3fr .1fr;
   }
   .mainContainer:before {
-    bottom: -30%;
-    min-height: 110vh;
+/*    bottom: -30%;
+    min-height: 110vh;*/
   }
 
   .icon {
@@ -197,8 +199,8 @@
   }
 
   .mainContainer:before {
-    bottom: -55%;
-    min-height: 140vh;
+/*    bottom: -55%;
+    min-height: 140vh;*/
   }
 
 }

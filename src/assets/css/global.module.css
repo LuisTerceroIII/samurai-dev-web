@@ -32,3 +32,30 @@ html {
   --mobile-line-height: 6vh;
 }
 
+
+.backgroundAboutMe {
+  background: url("../../assets/images/AboutMe/background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: visible;
+}
+
+.backgroundLanding {
+  background: url("../../assets/images/Landing/LandingWaves.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: visible;
+}
+.backgroundServices {
+  background: url("../../assets/images/Services/backgroundPackServices.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: visible;
+}
+

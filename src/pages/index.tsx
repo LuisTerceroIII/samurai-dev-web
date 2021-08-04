@@ -12,9 +12,11 @@ const IndexPage = (): JSX.Element => {
             <meta charSet="utf-8" />
             <title>Samurai Dev</title>
         </Helmet>
-      <Header>
-        <Landing />
-      </Header>
+    <div className={styles.backgroundLanding}>
+        <Header>
+            <Landing />
+        </Header>
+    </div>
     </div>
   );
 };
