@@ -23,7 +23,9 @@ const LandingView: React.FC<LandingProps> = ({
         objectFit={"contain"}
       />
       <Paragraph content={paragraph.content} cssClass={paragraph.cssClass} />
-        <Link  to={"/aboutMe"} className={button.cssClass}>{button.value}</Link>
+      <div className={button.cssClass}>
+          <Link  to={"/aboutMe"}>{button.value}</Link>
+      </div>
     </div>
   );
 };

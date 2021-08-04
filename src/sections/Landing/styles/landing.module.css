@@ -58,25 +58,26 @@ Esta hoja de estilo contiene todos los estilos para Landing.
 .button {
   grid-area: button;
   border-style: none;
-  border: 2px solid red;
   min-width: 25%;
   max-width: 25%;
   min-height: 70%;
   max-height: 70%;
   border-radius: 70px;
   background-color: #f7ca13;
-  font-size: 1.4vw;
-  color: black;
   transition: all 0.5s ease-out;
   cursor: pointer;
   justify-self: center;
   position: relative;
   box-shadow: var(--perfect-box-shadow);
   font-family: var(--font);
-  text-align: center;
+  display: flex;
   justify-content: center;
-  align-content: center;
+}
+.button a {
+  color: black;
   text-decoration: none;
+  font-size: 1.4vw;
+  align-self: center;
 
 }
 
