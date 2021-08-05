@@ -109,7 +109,7 @@
 @media (max-width: 700px) and (orientation: landscape) {
   /* Style adjustments for portrait mode goes here */
   .mainContainer {
-    grid-template-rows: .1fr .8fr .4fr .5fr .1fr;
+    grid-template-rows: .1fr .8fr .4fr .7fr .1fr;
   }
   .paragraph {
     margin-top: -3%;
