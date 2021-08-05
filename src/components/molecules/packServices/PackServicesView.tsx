@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 // @ts-ignore
 import * as styles from "./styles/packServices.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSortDown } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const PackServicesView: React.FC<PackServicesProps> = ({
   services,
@@ -36,7 +36,7 @@ const PackServicesView: React.FC<PackServicesProps> = ({
             key={uuidv4()}
             onClick={() => changeService(service.id)}
           >
-            <FontAwesomeIcon icon={faSortDown} key={uuidv4()} />
+            <FontAwesomeIcon icon={faChevronDown} key={uuidv4()} />
           </span>
         </div>
       ))}
