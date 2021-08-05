@@ -15,6 +15,7 @@ const ContactView = () => {
           src={"../../assets/images/Contact/buzon.png"}
           alt={"mail box"}
           objectFit={"contain"}
+          placeholder="TRACED_SVG"
         />
       </div>
     );

@@ -25,6 +25,7 @@ const PersonalInfoCardView = () => {
             heigth={48}
             quality={40}
             objectFit={"contain"}
+            placeholder="TRACED_SVG"
           />
         </a>
         <a
@@ -39,6 +40,7 @@ const PersonalInfoCardView = () => {
             heigth={48}
             quality={40}
             objectFit={"contain"}
+            placeholder="TRACED_SVG"
           />
         </a>
 
@@ -51,6 +53,7 @@ const PersonalInfoCardView = () => {
             heigth={48}
             quality={40}
             objectFit={"contain"}
+            placeholder="TRACED_SVG"
           />
         </a>
 
@@ -63,6 +66,7 @@ const PersonalInfoCardView = () => {
               heigth={48}
               quality={40}
               objectFit={"contain"}
+              placeholder="TRACED_SVG"
           />
         </a>
       </div>

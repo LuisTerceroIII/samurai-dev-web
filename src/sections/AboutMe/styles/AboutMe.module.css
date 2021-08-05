@@ -76,11 +76,6 @@
     grid-template-rows: .1fr .8fr .3fr .4fr;
   }
 
-  .mainContainer:before {
-/*    bottom: -30%;
-    min-height: 110vh;*/
-  }
-
   .icon {
     min-width: 8vw;
     max-width: 8vw;
@@ -103,7 +98,7 @@
 
 @media only screen and (max-width: 700px) {
   .title {
-    transform: translateY(50%);
+    margin-top: 20%;
   }
 }
 @media (max-width: 700px) and (orientation: landscape) {

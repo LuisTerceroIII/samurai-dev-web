@@ -45,3 +45,10 @@
     }
     
 }
+
+@media (max-width: 700px) and (orientation: landscape) {
+    /* Style adjustments for portrait mode goes here */
+   .grid {
+       margin-top: 10%;
+   }
+}
