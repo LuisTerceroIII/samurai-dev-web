@@ -16,7 +16,7 @@ module.exports = {
       },
       {
         option: "Contacto",
-        redirect: "contact",
+        redirect: "/contact",
       },
     ],
     sections: {
