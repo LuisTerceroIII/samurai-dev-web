@@ -30,6 +30,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   font-weight: 650;
   word-spacing: 2px;
   text-align: left;
+  padding: 0% 5% 0% 0%;
 }
 
 .paragraph {
@@ -125,6 +126,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
     text-align: center;
     position: relative;
     top: 10%;
+    margin-top: 5%;
   }
   .paragraph {
     text-align: center;
