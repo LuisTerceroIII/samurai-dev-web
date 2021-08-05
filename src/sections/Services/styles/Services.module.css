@@ -4,6 +4,7 @@
   /*border: 2px solid red;*/
   position: relative;
   top: -7%;
+  font-family: var(--font);
 }
 
 .mainTitle {
@@ -17,7 +18,7 @@
 }
 
 .secondTitle {
-  color: #D5573B;
+  color: #d5573b;
   font-family: var(--font);
   font-size: 2.3em;
   font-weight: normal;
@@ -29,8 +30,8 @@
   border-style: none;
   min-width: 13%;
   max-width: 13%;
-  min-height: 40%;
-  max-height: 40%;
+  min-height: 4vw;
+  max-height: 4vw;
   border-radius: 40px;
   background-color: #f7ca13;
   font-size: 1.4vw;
@@ -40,6 +41,14 @@
   align-self: center;
   margin-top: 3%;
   box-shadow: -1px 0px 34px -11px rgba(0, 0, 0, 0.87);
+  display: flex;
+  justify-content: center;
+}
+.button a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.4vw;
+  align-self: center;
 }
 .button:hover {
   transform: scale(1.1);
@@ -84,41 +93,40 @@
   .button {
     min-width: 20%;
     max-width: 20%;
-    min-height: 30%;
-    max-height: 30%;
-    font-size: 2.1vw;
-
+    min-height: 7vw;
+    max-height: 7vw;
   }
-
+  .button a {
+    font-size: 2.1vw;
+  }
 }
 
 @media only screen and (max-width: 700px) {
   .grid {
     margin-top: 10%;
   }
+  .button {
+
+    min-height: 8vw;
+    max-height: 8vw;
+  }
+  .button a {
+    font-size: 2.5vw;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  .button {
-    font-size: 3vw;
-    min-width: 28%;
-    max-width: 28%;
-
-  }
-
   .grid {
     margin-top: 10%;
   }
-
-
   .button {
-    font-size: 3vw;
-    min-width: 25%;
-    max-width: 25%;
-    min-height: 30%;
-    max-height: 30%;
-
+    min-height: 9.8vw;
+    max-height: 9.8vw;
   }
+  .button a {
+    font-size: 2.8vw;
+  }
+
 }
 
 @media only screen and (max-width: 515px) {
@@ -132,6 +140,13 @@
   .grid {
     margin-top: 20%;
   }
+  .button {
+    min-height: 11.8vw;
+    max-height: 11.8vw;
+    min-width: 25%;
+    max-width: 25%;
+  }
+  .button a {
+    font-size: 3.5vw;
+  }
 }
-
-

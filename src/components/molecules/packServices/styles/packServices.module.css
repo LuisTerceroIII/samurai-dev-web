@@ -48,7 +48,7 @@
 }
 
 .iconContainer {
-  color: var(--select-opt-menu-color);
+  color: #d5573b;
   height: 60%;
   font-size: 2.5vw;
   cursor: pointer;

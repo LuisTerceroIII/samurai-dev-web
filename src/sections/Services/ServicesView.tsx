@@ -6,6 +6,7 @@ import PackServices from "../../components/molecules/packServices/PackServices";
 import { useEffect } from "react";
 import ServiceProps from "./types/ServiceProps";
 import ServicesCards from "../../components/organisms/servicesCards/ServicesCards";
+import {Link} from "gatsby";
 
 const ServicesView: React.FC<ServiceProps> = ({ servicesCardsData }) => {
   useEffect(() => {}, []);
@@ -15,10 +16,9 @@ const ServicesView: React.FC<ServiceProps> = ({ servicesCardsData }) => {
       <Title cssClass={styles.mainTitle} content={"Servicios"} />
       <Title cssClass={styles.secondTitle} content={"Packs"} />
       <PackServices />
-      <div
-        className={styles.button}
-        onClick={() => console.log("Button packs services")}
-      ><p>{"Contactame"}</p></div>
+      <div className={styles.button}>
+        <Link to={"/contact"}>{"Contactame"}</Link>
+      </div>
       <Title cssClass={styles.thirdTitle} content={"Específicos"} />
       <ServicesCards
         servicesCardsData={servicesCardsData}
