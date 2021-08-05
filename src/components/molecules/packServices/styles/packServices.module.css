@@ -13,7 +13,7 @@
   align-items: center;
   width: fit-content;
   height: fit-content;
-  cursor: pointer;
+  cursor:  url("../../../../assets/cursors/hoverCursor.png"),auto;
   align-self: center;
   justify-self: center;
   min-width: 75%;
@@ -51,12 +51,12 @@
   color: #d5573b;
   height: 60%;
   font-size: 2.5vw;
-  cursor: pointer;
+  cursor:  url("../../../../assets/cursors/hoverCursor.png"),auto;
 }
 
 .invertIconContainer {
   font-size: 2.5vw;
-  cursor: pointer;
+  cursor:  url("../../../../assets/cursors/hoverCursor.png"),auto;
   transform: rotate(180deg);
   position: relative;
 }

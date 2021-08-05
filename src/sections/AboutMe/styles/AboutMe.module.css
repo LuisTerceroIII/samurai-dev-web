@@ -37,7 +37,7 @@
 
 .icon {
   grid-area: icon;
-  cursor: pointer;
+  cursor: url("../../../assets/cursors/hoverCursor.png"),auto;
   min-width: 5vw;
   max-width: 5vw;
   position: relative;
