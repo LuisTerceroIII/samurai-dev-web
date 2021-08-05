@@ -14,7 +14,7 @@ const ServicesView: React.FC<ServiceProps> = ({ servicesCardsData }) => {
   return (
     <div className={styles.grid}>
       <Title cssClass={styles.mainTitle} content={"Servicios"} />
-      <Title cssClass={styles.secondTitle} content={"Packs"} />
+      <Title cssClass={styles.secondTitle} content={"Paquetes"} />
       <PackServices />
       <div className={styles.button}>
         <Link to={"/contact"}>{"Contactame"}</Link>

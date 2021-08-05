@@ -57,7 +57,7 @@ En este sitio obtendrás la información necesaria para saber  de qué manera pu
       services: {
         title: "Servicios",
         packsSection: {
-          title: "Packs",
+          title: "Paquetes",
           servicesData: [
             {
               id: 0,
