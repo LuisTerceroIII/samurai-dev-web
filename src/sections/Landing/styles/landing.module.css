@@ -25,7 +25,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   transition: transform 0.2s ease;
 
   /*font-size: 5.2vh;*/
-  font-size: clamp(1.25rem, 3vw, 2.5rem);
+  font-size:  clamp(1.5rem, 2vw, 1.9rem);
   font-family: var(--font);
   font-weight: 650;
   word-spacing: 2px;
@@ -76,7 +76,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
 .button a {
   color: black;
   text-decoration: none;
-  font-size: 1.4vw;
+  font-size: clamp(1.3rem,2vw,1.8rem);
   align-self: center;
 
 }
@@ -134,19 +134,22 @@ Esta hoja de estilo contiene todos los estilos para Landing.
     transform: scale(.7) translateY(15%);
   }
   .button {
-    font-size: 1.8vw;
-    min-width: 25%;
-    max-width: 25%;
-    min-height: 50%;
-    max-height: 50%;
+    min-width: 20%;
+    max-width: 20%;
+
+  }
+  .button a {
+    /*font-size: 1.8vw;*/
   }
 }
 
 @media only screen and (max-width: 670px) {
   .button {
-    font-size: 3.5vw;
-    min-width: 28%;
-    max-width: 28%;
+    min-width: 35%;
+    max-width: 35%;
+  }
+  .button a {
+
   }
   .title {
     padding: 0% 3% 0% 3%;
@@ -163,19 +166,15 @@ Esta hoja de estilo contiene todos los estilos para Landing.
 }
 @media only screen and (max-width: 400px) {
   .button {
-    font-size: 4vw;
-    min-width: 28%;
-    max-width: 28%;
-    position: relative;
-    top: -30%;
-    transform: scale(1.1);
+    min-width: 40%;
+    max-width: 40%;
   }
   .title {
     padding: 0% 1% 0% 1%;
   }
   .paragraph {
     position: relative;
-    top: 1%;
+    top: 5%;
   }
 
   .grid {
