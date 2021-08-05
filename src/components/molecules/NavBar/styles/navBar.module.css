@@ -1,13 +1,12 @@
-:root {
-  --backgroud-color: #bfdbed;
-  --font: Alef, serif;
-}
+
 
 .navBarGrid {
   display: flex;
   /*    border: 2px solid blue;*/
   gap: 10%;
-  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  min-width: 100%;
 }
 
 .link {
@@ -41,18 +40,20 @@
 @media only screen and (max-width: 700px) {
   .navBarGrid {
     gap: 5%;
+    margin: 0 auto;
+    flex-wrap: wrap;
   }
   .link {
-    padding: 0% 5% 0% 5%;
+
   }
 }
 
 @media only screen and (max-width: 470px) {
   .navBarGrid {
     gap: 5%;
-    padding: 0% 5% 0% 5%;
+
   }
   .link {
-    padding: 0% 2.5% 0% 2.5%;
+    padding: 0% 2.5% 5% 2.5%;
   }
 }
