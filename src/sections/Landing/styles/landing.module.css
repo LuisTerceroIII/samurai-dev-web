@@ -145,7 +145,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   }
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 700px) {
   .button {
     min-width: 35%;
     max-width: 35%;
@@ -164,6 +164,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: .9fr .1fr .1fr .2fr;
+    margin-top: 5%;
   }
 }
 @media only screen and (max-width: 400px) {

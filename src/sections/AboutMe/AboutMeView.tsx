@@ -21,12 +21,18 @@ const AboutMeView: React.FC<AboutMeProps> = ({
         placeholder="blurred"
         objectFit={"contain"}
       />
-      <StaticImage
-        src={"../../assets/images/AboutMe/iconCV.png"}
-        alt={"icon CV"}
-        className={styles.icon}
-        objectFit={"contain"}
-      />
+      <a
+        href={
+          " https://drive.google.com/uc?export=download&id=1B_9IL0JMWtAwZWq4DUCllLeKHPZCV_55"
+        }
+      >
+        <StaticImage
+          src={"../../assets/images/AboutMe/iconCV.png"}
+          alt={"icon CV"}
+          className={styles.icon}
+          objectFit={"contain"}
+        />
+      </a>
     </section>
   );
 };
