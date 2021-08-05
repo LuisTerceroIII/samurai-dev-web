@@ -59,3 +59,13 @@ html {
   overflow: visible;
 }
 
+.backgroundContact {
+  background: url("../../assets/images/Contact/background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: visible;
+  min-height: 100vh;
+}
+

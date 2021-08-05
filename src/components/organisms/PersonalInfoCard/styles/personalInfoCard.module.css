@@ -1,0 +1,52 @@
+.mainBox {
+    border: 2px solid black;
+    min-width: fit-content;
+    max-width: 80%;
+    min-height: fit-content;
+    background-color: #f6f7eb;
+}
+
+.personalInfoBox {
+    min-width: fit-content;
+    max-width: fit-content;
+    margin-left: 5%;
+    margin-top: 10%;
+    font-family: var(--font);
+    font-size: clamp(1rem,2vw,2.5rem);
+}
+
+.title {
+    font-weight: 750;
+}
+.personalInfoBox p {
+    font-size: clamp(0.8rem,2vw,2.5rem);
+}
+.icons {
+    display: flex;
+    gap: 5%;
+    margin-left: 5%;
+    margin-bottom: 15%;
+    min-width: fit-content;
+    padding-right: 2%;
+}
+.icon {
+    margin-left: 5%;
+    margin-bottom: 10%;
+    min-width: 50%;
+    max-width: 80%;
+
+}
+
+@media only screen and (max-width: 700px) {
+    .personalInfoBox {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: fit-content;
+    }
+    .personalInfoBox p {
+        font-size: clamp(1.2rem,2.5vw,2.5rem);
+        overflow: hidden;
+
+    }
+}

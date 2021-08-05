@@ -9,7 +9,7 @@ const IconBar: React.FC<IconBarProps> = ({ icons }): JSX.Element => {
     <div className={styles.container}>
       {icons.map((icon) => (
         <GatsbyImage
-          alt={"tech icon"}
+          alt={"icon"}
           image={getImage(icon.node.childImageSharp)}
           className={styles.image}
           key={icon.node.childImageSharp.id}
