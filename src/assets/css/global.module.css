@@ -8,7 +8,7 @@ html {
 }
 
 html {
-  cursor: url("../cursors/cursor.svg"),auto;
+  cursor: url("../cursors/icons8-cursor-50.png"),auto;
   /* background: rgb(49,180,124);
     background: linear-gradient(90deg, rgba(49,180,124,0.6670869031206232) 4%, rgba(126,175,108,0.4429972672662815) 43%, rgba(0,236,255,0.2497199563419118) 74%);*/
   background: #efefda;
