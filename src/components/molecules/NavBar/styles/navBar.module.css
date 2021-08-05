@@ -57,3 +57,17 @@
     padding: 0% 2.5% 5% 2.5%;
   }
 }
+
+@media (max-width: 700px) and (orientation: landscape) {
+  /* Style adjustments for portrait mode goes here */
+  .navBarGrid {
+    padding: 0% 5% 0% 5%;
+    gap: 20%;
+    min-width: 100%;
+
+  }
+  .link {
+    padding: 0% 0% 10% 0%;
+  }
+}
+
