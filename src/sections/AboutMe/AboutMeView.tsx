@@ -22,6 +22,7 @@ const AboutMeView: React.FC<AboutMeProps> = ({
         objectFit={"contain"}
       />
       <a
+        className={styles.linkCV}
         href={
           " https://drive.google.com/uc?export=download&id=1B_9IL0JMWtAwZWq4DUCllLeKHPZCV_55"
         }

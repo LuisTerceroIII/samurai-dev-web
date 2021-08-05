@@ -34,7 +34,12 @@
   grid-area: image;
   align-self: center;
 }
-
+.linkCV {
+  max-width: 5vw;
+  min-width: 5vw;
+  align-self: center;
+  justify-self: center;
+}
 .icon {
   grid-area: icon;
   cursor: url("../../../assets/cursors/hoverCursor.png"),auto;
