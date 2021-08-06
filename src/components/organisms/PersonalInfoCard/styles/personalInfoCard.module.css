@@ -12,7 +12,7 @@
     margin-left: 5%;
     margin-top: 10%;
     font-family: var(--font);
-    font-size: clamp(1rem,2vw,2.5rem);
+    font-size: clamp(.99rem,1.8vw,2.5rem);
 }
 
 .title {
