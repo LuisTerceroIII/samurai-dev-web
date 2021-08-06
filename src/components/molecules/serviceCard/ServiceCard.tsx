@@ -7,12 +7,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   title,
   description,
   image,
-  icons,
-  left,
+  icons
 }) => {
   return (
     <ServiceCardView
-      left={left}
       description={description}
       icons={icons}
       image={image}

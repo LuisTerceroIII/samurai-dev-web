@@ -18,7 +18,6 @@ a {
   --title-color: #090909;
   --secondary-title-color: #3d80b2;
   --select-opt-menu-color: #e23237;
-  /*--select-opt-menu-color: #6762a6;*/
   --text-color: #090909;
   --desktop-text-size: 3vh;
   --desktop-line-height: 6.5vh;
@@ -43,7 +42,7 @@ a {
   background-size: cover;
   background-attachment: fixed;
   overflow: visible;
-  min-height: 100vh;
+
 
 }
 .backgroundServices {
@@ -53,7 +52,7 @@ a {
   background-size: cover;
   background-attachment: fixed;
   overflow: visible;
-  min-height: 100vh;
+
 }
 
 .backgroundContact {
@@ -63,5 +62,48 @@ a {
   background-size: cover;
   background-attachment: fixed;
   overflow: visible;
+
+}
+
+.projectsGrid {
   min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "image title";
+
+
+}
+.image {
+  grid-area: image;
+  transform: scale(.7);
+}
+.titleBox {
+  display: flex;
+}
+.titleProject {
+  grid-area: title;
+  font-family: var(--font);
+  margin: 0 auto;
+  font-size: 5vw;
+  color: #292f39;
+  align-self: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .projectsGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: .3fr .5fr;
+    grid-template-areas:
+            "title"
+            "image"
+  ;
+    margin-top: 5%;
+  }
+
+  .titleProject {
+    font-size: 10vw;
+    text-align: center;
+  }
 }

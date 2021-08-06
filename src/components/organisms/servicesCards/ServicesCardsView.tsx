@@ -15,7 +15,6 @@ const ServicesCardsView: React.FC<ServicesCardsProps> = ({
           description={serviceCardData.description}
           icons={serviceCardData?.icons}
           image={serviceCardData.image}
-          left={serviceCardData.left}
           name={serviceCardData.name}
           title={serviceCardData.title}
           key={index}

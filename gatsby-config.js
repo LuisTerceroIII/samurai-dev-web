@@ -104,7 +104,7 @@ En este sitio obtendrás la información necesaria para saber  de qué manera pu
           maintenance: {
             title: "Mantenimiento",
             description:
-              "Si trabajamos juntos puedo modificar tu sitio, api o base de datos siempre que quieras.",
+              "Si trabajamos juntos puedo modificar tu proyecto siempre que quieras.",
           },
           webDesign: {
             title: "Diseño web",

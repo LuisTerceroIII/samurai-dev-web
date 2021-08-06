@@ -13,10 +13,8 @@ const ServiceCardView: React.FC<ServiceCardProps> = ({
   description,
   image,
   icons = [],
-  left,
 }) => {
-  //TODO: eliminar mainBoxLeft, dejar mainBox sola. cambiar posisicon de elemtos, conservar grilla.
-  return left ? (
+  return (
     <div className={styles.mainBoxLeft}>
       <div className={styles.imageBox}>
         <GatsbyImage
@@ -26,26 +24,19 @@ const ServiceCardView: React.FC<ServiceCardProps> = ({
           objectFit={"contain"}
         />
       </div>
+
       <Title cssClass={styles.title} content={title} />
-      <Paragraph content={description} cssClass={styles.description} />
-      <div className={styles.iconBar}>
-        <IconBar icons={icons} />
+      <div className={styles.descriptionBox}>
+        {" "}
+        <Paragraph content={description} cssClass={styles.description} />
       </div>
-    </div>
-  ) : (
-    <div className={styles.mainBoxRight}>
-      <div className={styles.imageBox}>
-        <GatsbyImage
-          image={getImage(image)}
-          className={styles.image}
-          alt={name}
-        />
-      </div>
-      <Title cssClass={styles.title} content={title} />
-      <Paragraph content={description} cssClass={styles.description} />
-      <div className={styles.iconBar}>
-        <IconBar icons={icons} />
-      </div>
+      {icons ? (
+        <div className={styles.iconBar}>
+          <IconBar icons={icons} />
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
