@@ -62,7 +62,7 @@ a {
   background-size: cover;
   background-attachment: fixed;
   overflow: visible;
-
+  min-height: 100vh;
 }
 
 .projectsGrid {
