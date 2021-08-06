@@ -9,6 +9,7 @@
             ". . . . .";
     align-items: center;
     justify-items: stretch;
+    min-height: 100vh;
 }
 
 .personalCardInfoBox {
