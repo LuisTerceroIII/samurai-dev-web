@@ -19,11 +19,11 @@ a {
   --secondary-title-color: #3d80b2;
   --select-opt-menu-color: #e23237;
   --text-color: #090909;
-  --desktop-text-size: 3vh;
-  --desktop-line-height: 6.5vh;
+  --desktop-text-size: 3vw;
+  --desktop-line-height: 3.5vw;
   --perfect-box-shadow: -1px 0px 34px -11px rgba(0, 0, 0, 1);
   --responsive-font-size: clamp(1.3rem, 2vw, 1.6rem);
-  --mobile-line-height: 6vh;
+  --mobile-line-height: 6vw;
 }
 
 .backgroundAboutMe {
@@ -42,7 +42,7 @@ a {
   background-size: cover;
   background-attachment: fixed;
   overflow: visible;
-
+  min-height: 100vh;
 
 }
 .backgroundServices {

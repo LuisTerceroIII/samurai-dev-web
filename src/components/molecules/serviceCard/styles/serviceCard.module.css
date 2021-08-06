@@ -56,15 +56,17 @@
   grid-area: description;
   align-self: stretch;
   display: flex;
+  margin-bottom: -5%;
 }
 .description {
   grid-area: description;
   font-family: var(--font);
   font-size: clamp(1.1rem, 1.5vw,1.2rem);
-  align-self: center;
+  align-self: flex-start;
   margin-left: 2%;
   padding: 0% 3% 0% 3%;
   text-overflow: ellipsis;
+
 
 }
 

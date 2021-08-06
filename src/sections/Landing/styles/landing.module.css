@@ -8,7 +8,6 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   grid-template-columns: .2fr repeat(2,1fr) .5fr .5fr .5fr;
   grid-template-rows: .3fr .2fr repeat(4,.3fr);
   /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(191,219,237,0.725910432532388) 0%, rgba(0,212,255,0.6194678555015756) 100%);*/
-  min-height: 100vh;
   margin-top: -6%;
   grid-template-areas:
           " . . . . . . "
@@ -23,8 +22,6 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   grid-area: title;
   color: var(--title-color);
   transition: transform 0.2s ease;
-
-  /*font-size: 5.2vh;*/
   font-size:  clamp(1.5rem, 2vw, 1.9rem);
   font-family: var(--font);
   font-weight: 650;
@@ -39,7 +36,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   font-size: var(--responsive-font-size);
   font-family: var(--font);
   line-height: var(--desktop-line-height);
-  word-spacing: 0.8vh;
+  word-spacing: 0.2vw;
   text-align: left;
   white-space: break-spaces;
   position: relative;
@@ -193,7 +190,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
 @media (max-width: 700px) and (orientation: landscape) {
   /* Style adjustments for portrait mode goes here */
   .paragraph {
-    line-height: 7.5vh;
+    line-height: 7.5vw;
   }
 }
 

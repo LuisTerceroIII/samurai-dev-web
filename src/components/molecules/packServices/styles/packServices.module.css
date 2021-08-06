@@ -49,7 +49,6 @@
 
 .iconContainer {
   color: #f8d606;
-  height: 60%;
   font-size: 2.5vw;
   cursor:  url("../../../../assets/cursors/hoverCursor.png"),auto;
 }
@@ -72,6 +71,10 @@
   text-align: center;
   justify-self: left;
   width: fit-content;
+/*  display: inline-block;
+  background-color: #939dd7;
+  padding: 5%;
+  border-radius: 20px;*/
 }
 
 @media only screen and (max-width: 1250px) {
@@ -160,7 +163,8 @@
     font-size: 100%;
   }
   .paragraph {
-    line-height: 5.5vh;
+    line-height: 6.5vw;
+
   }
 
   .iconContainer {
@@ -175,7 +179,7 @@
 @media (max-width: 700px) and (orientation: landscape) {
   /* Style adjustments for portrait mode goes here */
   .paragraph {
-    line-height: 7.5vh;
+    line-height: 5.5vw;
   }
   .iconContainer {
     font-size: 150%;

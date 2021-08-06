@@ -113,7 +113,7 @@
   }
   .paragraph {
     margin-top: -3%;
-    line-height: 7.5vh;
+    line-height: 7.5vw;
   }
   .image {
     margin-top: 10%;
@@ -122,21 +122,11 @@
   .icon {
     margin-top: 10%;
   }
-
-  .mainContainer:before {
-/*    bottom: -90%;
-    min-height: 140vh;*/
-  }
 }
 @media only screen and (max-width: 620px) {
   .mainContainer {
     grid-template-rows: .1fr .8fr .3fr .2fr;
 
-  }
-
-  .mainContainer:before {
-/*    bottom: -30%;
-    min-height: 110vh;*/
   }
 }
 
@@ -144,10 +134,7 @@
   .mainContainer {
     grid-template-rows: .1fr .4fr .3fr .1fr;
   }
-  .mainContainer:before {
-/*    bottom: -30%;
-    min-height: 110vh;*/
-  }
+
 
   .icon {
     min-width: 10vw;
@@ -161,7 +148,7 @@
   .paragraph {
     text-align: center;
     padding: 4% 4% 0% 4%;
-    line-height: 5vh;
+    line-height: 8.5vw;
     margin-top: -2%;
   }
   .image {
