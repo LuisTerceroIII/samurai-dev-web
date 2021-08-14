@@ -1,10 +1,12 @@
 import * as React from "react";
 import PackServicesView from "./PackServicesView";
 import { graphql, useStaticQuery } from "gatsby";
-import { useState } from "react";
+import {useEffect, useState} from "react";
 import Service from "./types/Service";
 // @ts-ignore
 import * as styles from "./styles/packServices.module.css";
+
+
 //TODO: SACAR QUERY DE AQUI, LLEVAR A SERVICE Y HACER LLEGAR AQUI!
 const PackServices = () => {
   const query = useStaticQuery(graphql`

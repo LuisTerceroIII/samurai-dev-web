@@ -7,6 +7,8 @@ import { v4 as uuidv4 } from "uuid";
 import * as styles from "./styles/packServices.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useState } from "react";
+import { useMediaQuery } from "react-responsive";
 
 const PackServicesView: React.FC<PackServicesProps> = ({
   services,
@@ -14,6 +16,32 @@ const PackServicesView: React.FC<PackServicesProps> = ({
   changeService,
   arrowsStyles,
 }) => {
+  const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 990px)" });
+  const [viewport, setViewport] = useState({
+    desktop: true,
+    mobile: false,
+  });
+
+  useEffect(() => {
+    console.log("dentro de resize");
+    const handleResize = () => {
+      if (isDesktopOrLaptop) {
+        setViewport({
+          desktop: true,
+          mobile: false,
+        });
+      } else if (isTabletOrMobile) {
+        setViewport({
+          desktop: false,
+          mobile: true,
+        });
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  });
+
   return (
     <section className={styles.grid}>
       {services.map((service, key) => (
@@ -34,16 +62,29 @@ const PackServicesView: React.FC<PackServicesProps> = ({
               service.active ? arrowsStyles.normal : arrowsStyles.invert
             }
             key={uuidv4()}
+            /*onClick={() => changeService(service.id)}*/
             onClick={() => changeService(service.id)}
           >
             <FontAwesomeIcon icon={faChevronDown} key={uuidv4()} />
           </span>
+          {viewport.mobile ? (
+            <Paragraph
+              content={service.active ? service.description : ""}
+              cssClass={styles.paragraph}
+            />
+          ) : (
+            ""
+          )}
         </div>
       ))}
-      <Paragraph
-        content={serviceSelected.description}
-        cssClass={styles.paragraph}
-      />
+      {viewport.desktop ? (
+        <Paragraph
+          content={serviceSelected.description}
+          cssClass={styles.paragraph}
+        />
+      ) : (
+        ""
+      )}
     </section>
   );
 };
