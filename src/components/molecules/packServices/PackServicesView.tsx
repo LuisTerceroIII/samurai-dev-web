@@ -15,34 +15,13 @@ const PackServicesView: React.FC<PackServicesProps> = ({
   serviceSelected,
   changeService,
   arrowsStyles,
+  viewport,
+  showParagraph,
 }) => {
-  const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 990px)" });
-  const [viewport, setViewport] = useState({
-    desktop: true,
-    mobile: false,
-  });
-
   useEffect(() => {
-    console.log("dentro de resize");
-    const handleResize = () => {
-      if (isDesktopOrLaptop) {
-        setViewport({
-          desktop: true,
-          mobile: false,
-        });
-      } else if (isTabletOrMobile) {
-        setViewport({
-          desktop: false,
-          mobile: true,
-        });
-      }
-      services.forEach((service) => service.active = false)
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  });
-
+    console.log(showParagraph)
+    console.log(viewport)
+  },[showParagraph])
   return (
     <section className={styles.grid}>
       {services.map((service, key) => (
@@ -80,7 +59,7 @@ const PackServicesView: React.FC<PackServicesProps> = ({
       ))}
       {viewport.desktop ? (
         <Paragraph
-          content={serviceSelected.description}
+          content={showParagraph ? serviceSelected.description : ""}
           cssClass={styles.paragraph}
         />
       ) : (

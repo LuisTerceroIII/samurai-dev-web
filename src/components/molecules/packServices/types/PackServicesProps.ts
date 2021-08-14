@@ -5,4 +5,6 @@ export default interface PackServicesProps {
   serviceSelected: Service;
   changeService(id: number): void;
   arrowsStyles: any;
+  viewport: any;
+  showParagraph: any;
 }
