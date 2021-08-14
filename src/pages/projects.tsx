@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import { StaticImage } from "gatsby-plugin-image";
 import Header from "../layouts/header/Header";
 import Title from "../components/atoms/Title/Title";
+import ProjectsSection from "../sections/Projects/Projects";
 
 const Projects = () => {
   return (
@@ -14,7 +15,13 @@ const Projects = () => {
       </Helmet>
 
       <div className={`${styles.backgroundLanding}`}>
-        <Header>
+          <Header>
+              <ProjectsSection />
+          </Header>
+
+
+
+      {/*  <Header>
           <div className={styles.projectsGrid}>
             <StaticImage
               className={styles.image}
@@ -29,7 +36,7 @@ const Projects = () => {
               />
             </div>
           </div>
-        </Header>
+        </Header>*/}
       </div>
     </div>
   );

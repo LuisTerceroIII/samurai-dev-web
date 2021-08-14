@@ -3,6 +3,10 @@ module.exports = {
     title: "Samurai dev site",
     navBar: [
       {
+        option: "Inicio",
+        redirect: "/"
+      },
+      {
         option: "Sobre mi",
         redirect: "/aboutMe",
       },
