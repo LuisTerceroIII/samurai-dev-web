@@ -37,6 +37,7 @@ const PackServicesView: React.FC<PackServicesProps> = ({
           mobile: true,
         });
       }
+      services.forEach((service) => service.active = false)
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);

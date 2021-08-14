@@ -129,8 +129,8 @@
     margin: 2% 0% 2% 0%;
   }
   .titleBox {
-    min-height: 8vh;
-    max-height: 8vh;
+    min-height: 8vw;
+    max-height: 8vw;
     min-width: 60%;
     max-width: 60%;
   }
@@ -147,6 +147,7 @@
   .paragraph {
     grid-area: paragraph;
     line-height: var(--mobile-line-height);
+    max-height: 800px;
   }
 
   .serviceName {
