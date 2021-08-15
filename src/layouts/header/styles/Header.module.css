@@ -25,7 +25,7 @@
   /* border: 2px solid chartreuse;*/
   grid-area: logo;
   max-width: 10vw;
-  max-height: 15vh;
+  max-height: 15vw;
   overflow: visible !important;
   position: relative;
   left: 22%;
@@ -41,8 +41,8 @@
     grid-area: logo;
     max-width: 12vw;
     min-width: 12vw;
-    max-height: 18vh;
-    min-height: 18vh;
+    max-height: 18vw;
+    min-height: 18vw;
     overflow: visible !important;
     position: relative;
     left: 22%;
@@ -56,8 +56,8 @@
     grid-area: logo;
     max-width: 16vw;
     min-width: 16vw;
-    max-height: 22vh;
-    min-height: 22vh;
+    max-height: 22vw;
+    min-height: 22vw;
     overflow: visible !important;
     position: relative;
     left: 22%;

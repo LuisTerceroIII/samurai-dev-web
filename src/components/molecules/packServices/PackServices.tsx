@@ -40,15 +40,22 @@ const PackServices = () => {
     normal: styles.iconContainer,
     invert: styles.invertIconContainer,
   };
+
   //Service that shows
   const [serviceSelected, setServiceSelected] = useState<Service>(
     servicesData[0]
   );
 
   const changeService = (id: number) => {
-    changeServiceSelected(id);
-    changeArrowDir(servicesData, id, setServicesData);
-    setShowParagraph(true);
+    if(id === serviceSelected.id && serviceSelected.active) {
+      setShowParagraph(false);
+      servicesData.forEach(service => service.active = false)
+    } else {
+      changeServiceSelected(id);
+      changeArrowDir(servicesData, id, setServicesData);
+      setShowParagraph(true);
+    }
+
   };
 
   const changeServiceSelected = (id: number) => {
@@ -69,7 +76,6 @@ const PackServices = () => {
     setServicesData(servicesData);
   };
 
-
   const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 990px)" });
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 990px)" });
   const [viewport, setViewport] = useState({
@@ -77,25 +83,21 @@ const PackServices = () => {
     mobile: false,
   });
 
-  let firstLoad = 0;
+  const handleResize = () => {
+    if (isDesktopOrLaptop) {
+      setViewport({
+        desktop: true,
+        mobile: false,
+      });
+    } else if (isTabletOrMobile) {
+      setViewport({
+        desktop: false,
+        mobile: true,
+      });
+    }
+  };
 
   useEffect(() => {
-    console.log("dentro de resize");
-    const handleResize = () => {
-      if (isDesktopOrLaptop) {
-        setViewport({
-          desktop: true,
-          mobile: false,
-        });
-      } else if (isTabletOrMobile) {
-        setViewport({
-          desktop: false,
-          mobile: true,
-        });
-      }
-      servicesData.forEach((service) => service.active = false)
-      setShowParagraph(false);
-    };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   });

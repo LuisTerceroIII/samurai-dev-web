@@ -28,9 +28,9 @@ const PackServicesView: React.FC<PackServicesProps> = ({
         <div
           className={styles.titleIconContainer}
           key={uuidv4()}
-          onClick={() => changeService(service.id)}
+
         >
-          <span className={styles.titleBox} key={uuidv4()}>
+          <span className={styles.titleBox} key={uuidv4()} onClick={() => changeService(service.id)}>
             <Title
               cssClass={styles.serviceName}
               content={service.name}

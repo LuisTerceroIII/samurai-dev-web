@@ -67,14 +67,10 @@
   /*font-size: 1.6vw;*/
   font-size: var(--responsive-font-size);
   color: var(--text-color);
-  transition: all 1s ease;
   text-align: center;
   justify-self: left;
   width: fit-content;
-/*  display: inline-block;
-  background-color: #939dd7;
-  padding: 5%;
-  border-radius: 20px;*/
+
 }
 
 @media only screen and (max-width: 1250px) {
@@ -152,19 +148,26 @@
 
   .serviceName {
     font-size: 2.3vw;
+    font-weight: 600;
   }
 }
 @media only screen and (max-width: 590px) {
 
   .titleBox {
-    min-width: 100%;
+    min-width: 200px;
+    display: flex;
   }
 
   .serviceName {
     font-size: 100%;
+    align-self: center;
+    justify-self: center;
+    margin: 0 auto;
   }
   .paragraph {
-    line-height: 6.5vw;
+
+    line-height: 8vw;
+    min-width: 85vw;
 
   }
 

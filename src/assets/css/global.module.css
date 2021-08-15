@@ -10,6 +10,9 @@ html {
   cursor: url("../cursors/icons8-cursor-50.png"), auto;
   background: #efefda;
 }
+p {
+  cursor: url("../cursors/icons8-cursor-50.png"), auto;
+}
 a {
   cursor: url("../cursors/hoverCursor.png"), auto;
 }
