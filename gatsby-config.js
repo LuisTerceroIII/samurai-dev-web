@@ -37,7 +37,7 @@ En este sitio obtendrás la información necesaria para saber  de qué manera pu
           cssClass: "",
         },
         button: {
-          value: "Conoceme",
+          value: "Servicios",
           cssClass: "",
           disable: false,
           onClick: "",
