@@ -70,6 +70,7 @@
   text-align: center;
   justify-self: left;
   width: fit-content;
+  display: inline;
 
 }
 

@@ -10,6 +10,12 @@ html {
   cursor: url("../cursors/icons8-cursor-50.png"), auto;
   background: #efefda;
 }
+::selection {
+  color: black;
+  background: #c85c23;
+}
+
+
 p {
   cursor: url("../cursors/icons8-cursor-50.png"), auto;
 }

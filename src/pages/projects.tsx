@@ -15,13 +15,13 @@ const Projects = () => {
       </Helmet>
 
       <div className={`${styles.backgroundLanding}`}>
-          <Header>
-              <ProjectsSection />
-          </Header>
+          {/*<Header>*/}
+          {/*    <ProjectsSection />*/}
+          {/*</Header>*/}
 
 
 
-      {/*  <Header>
+       <Header>
           <div className={styles.projectsGrid}>
             <StaticImage
               className={styles.image}
@@ -36,7 +36,7 @@ const Projects = () => {
               />
             </div>
           </div>
-        </Header>*/}
+        </Header>
       </div>
     </div>
   );
