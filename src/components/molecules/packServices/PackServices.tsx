@@ -54,6 +54,7 @@ const PackServices = () => {
       changeServiceSelected(id);
       changeArrowDir(servicesData, id, setServicesData);
       setShowParagraph(true);
+      handleResize()
     }
 
   };
@@ -79,7 +80,7 @@ const PackServices = () => {
   const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 990px)" });
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 990px)" });
   const [viewport, setViewport] = useState({
-    desktop: true,
+    desktop: false,
     mobile: false,
   });
 

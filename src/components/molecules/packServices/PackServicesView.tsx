@@ -18,9 +18,11 @@ const PackServicesView: React.FC<PackServicesProps> = ({
   viewport,
   showParagraph,
 }) => {
+
   useEffect(() => {
     console.log(showParagraph)
     console.log(viewport)
+
   },[showParagraph])
   return (
     <section className={styles.grid}>
