@@ -78,7 +78,7 @@ const AboutMe = () => {
 
   return (
     <>
-      {isLoading && <h6>Loading...</h6>}
+      {isLoading && <h6> </h6>}
       {isLoad && (
         <AboutMeView
           title={titulo}
