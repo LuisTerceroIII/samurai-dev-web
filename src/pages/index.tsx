@@ -11,6 +11,7 @@ const IndexPage = (): JSX.Element => {
         <Helmet>
             <meta charSet="utf-8" />
             <title>Samurai Dev</title>
+            <meta name="google-site-verification" content="fTkmtnuPg9LkvoJC4pPSxfO-SrdocHM2JhYrGtJ36k4" />
         </Helmet>
     <div className={styles.backgroundLanding}>
         <Header>
