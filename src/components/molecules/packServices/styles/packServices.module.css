@@ -12,7 +12,8 @@
   flex-direction: column;
   align-items: center;
   width: fit-content;
-  height: fit-content;
+  max-height: fit-content;
+  min-height: fit-content;
   cursor:  url("../../../../assets/cursors/hoverCursor.png"),auto;
   align-self: center;
   justify-self: center;
@@ -22,8 +23,8 @@
 }
 
 .titleBox {
-  min-height: 40%;
-  max-height: 50%;
+  max-height: 150px;
+  min-height: 150px;
   background-color: #faf6f6;
   border-radius: 20px;
   padding: 7%;
@@ -39,7 +40,7 @@
 
 .serviceName {
   font-family: var(--font);
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   text-align: center;
   align-self: center;

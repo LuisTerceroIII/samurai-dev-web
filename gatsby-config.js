@@ -50,7 +50,7 @@ En este sitio obtendrás la información necesaria para saber  de qué manera pu
         },
         paragraph: {
           content:
-            "Mi nombre es Luis Espinoza, soy programador especializado en desarrollo web, estudiante de la universidad general sarmiento y emprendedor. Me dedico a crear sitios y aplicaciones web utilizando las mejores tecnologías. Me gusta especialmente trabajar con artistas , emprendedores, profesionales y comercios interesados en acercar su perfil o idea a internet y darse a conocer de una manera única. Mi mayor motivo es acercar la web  y ayudar a los demas a alcanzar sus objetivos. ",
+            "Mi nombre es Luis Espinoza, soy programador especializado en desarrollo web, estudiante de la Universidad General Sarmiento. Me dedico a crear sitios y aplicaciones web, me gusta especialmente trabajar con artistas , emprendedores, profesionales y comercios interesados en acercar su perfil o idea a internet y darse a conocer de una manera única. Mi mayor motivo es acercar la web  y ayudar a los demas a alcanzar sus objetivos. ",
           cssClass: "",
         },
         icon: {

@@ -57,6 +57,8 @@
   align-self: stretch;
   display: flex;
   margin-bottom: -5%;
+  position: relative;
+  top: -20%;
 }
 .description {
   grid-area: description;
