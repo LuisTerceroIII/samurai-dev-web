@@ -18,7 +18,7 @@
           "image title"
           "image description"
           "image iconBar"
-          "image .";
+          ". .";
 
 ;
 }
@@ -58,7 +58,7 @@
   display: flex;
   margin-bottom: -5%;
   position: relative;
-  top: -20%;
+  top: -10%;
 }
 .description {
   grid-area: description;
