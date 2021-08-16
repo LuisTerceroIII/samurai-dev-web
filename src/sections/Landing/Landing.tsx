@@ -82,7 +82,7 @@ const Landing: React.FC = (): JSX.Element => {
 
   return (
     <>
-      {isLoading && <h6>Loading...</h6>}
+      {isLoading && <h6> </h6>}
       {isLoad && (
 
           <LandingView
