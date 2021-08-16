@@ -6,7 +6,7 @@
   max-height: 200px;
   display: grid;
   grid-template-columns: .35fr 1fr;
-  grid-template-rows: .3fr  1fr 1fr .1fr;
+  grid-template-rows: .3fr  1fr 1fr 1fr;
   background-color: #f7db9b;
   cursor:  url("../../../../assets/cursors/hoverCursor.png"),auto;
   transform: scale(0.9);
@@ -18,7 +18,7 @@
           "image title"
           "image description"
           "image iconBar"
-          ". .";
+          "image iconBar";
 
 ;
 }
@@ -63,7 +63,7 @@
 .description {
   grid-area: description;
   font-family: var(--font);
-  font-size: clamp(1.1rem, 1.5vw,1.2rem);
+  font-size: clamp(1rem, 1.5vw,1.2rem);
   align-self: flex-start;
   margin-left: 2%;
   padding: 0% 3% 0% 3%;
