@@ -6,7 +6,7 @@
 .header {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr .2fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr .45fr;
   grid-template-areas: "logo .  . menu menu .";
   min-width: 100%;
   max-width: 100%;
@@ -63,6 +63,7 @@
     left: 22%;
   }
 }
+
 @media only screen and (max-width: 700px) {
 
   .header {
