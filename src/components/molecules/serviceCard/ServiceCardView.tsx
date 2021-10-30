@@ -16,6 +16,7 @@ const ServiceCardView: React.FC<ServiceCardProps> = ({
 }) => {
   return (
     <div className={styles.mainBoxLeft}>
+
       <div className={styles.imageBox}>
         <GatsbyImage
           image={getImage(image)}
@@ -25,18 +26,17 @@ const ServiceCardView: React.FC<ServiceCardProps> = ({
         />
       </div>
 
-      <Title cssClass={styles.title} content={title} />
       <div className={styles.descriptionBox}>
-        {" "}
-        <Paragraph content={description} cssClass={styles.description} />
+          <Title cssClass={styles.title} content={title} />
+          <Paragraph content={description} cssClass={styles.description} />
+          {icons ? (
+              <div className={styles.iconBar}>
+                  <IconBar icons={icons} />
+              </div>
+          ) : (
+              <></>
+          )}
       </div>
-      {icons ? (
-        <div className={styles.iconBar}>
-          <IconBar icons={icons} />
-        </div>
-      ) : (
-        <></>
-      )}
     </div>
   );
 };

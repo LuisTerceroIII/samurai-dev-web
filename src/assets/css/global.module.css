@@ -16,7 +16,6 @@ html {
 }
 
 html {
-  cursor: url("../cursors/icons8-cursor-50.png"), auto;
   background: #efefda;
 }
 ::selection {
@@ -26,10 +25,10 @@ html {
 
 
 p {
-  cursor: url("../cursors/icons8-cursor-50.png"), auto;
+  cursor: pointer;
 }
 a {
-  cursor: url("../cursors/hoverCursor.png"), auto;
+  cursor: pointer;;
 }
 :root {
   --font:'Be Vietnam', sans-serif;

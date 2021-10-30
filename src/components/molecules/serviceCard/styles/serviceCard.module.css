@@ -1,16 +1,15 @@
 .mainBoxLeft {
   /*border: 2px solid red;*/
-  min-width: 100%;
-  max-width: 100%;
-  min-height: 200px;
-  max-height: 200px;
+  min-width: 85%;
+  max-width: 85%;
+  min-height: 10vw;
+  max-height: 10vw;
   display: grid;
-  grid-template-columns: .35fr 1fr;
-  grid-template-rows: .2fr  .8fr .8fr 1fr 1fr;
+  grid-template-columns: .4fr 1fr;
+  grid-template-rows: .2fr .6fr .8fr 1fr 1fr;
   background-color: #f7db9b;
-  cursor:  url("../../../../assets/cursors/hoverCursor.png"),auto;
-  transform: scale(0.9);
-  transition: all 0.5s ease-out;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
   box-shadow: var(--perfect-box-shadow);
   border-radius: 10px;
   margin: 5%;
@@ -24,16 +23,15 @@
 ;
 }
 .mainBoxLeft:hover {
-  transform: scale(1);
+  transform: scale(1.05);
 }
 
 .title {
-  grid-area: title;
   min-width: 100%;
   align-self: stretch;
   font-family: var(--font);
   margin-left: 5%;
-  font-size: clamp(1.2rem, 1.5vw,1.5rem);
+  font-size: 1.5vw;
 }
 
 .imageBox {
@@ -41,10 +39,12 @@
   /*border: 2px solid blue;*/
   max-width: 100%;
   min-width: 100%;
-  max-height: 100%;
-  background-color: #f7ca13;
+  min-height: 10vw;
+  max-height: 10vw;
+  background-color: #f1a63d;
   border-radius: 10px 0px 0px 10px;
   display: flex;
+
 
 }
 .image {
@@ -54,43 +54,72 @@
   padding: 0% 3% 0% 3%;
 }
 .descriptionBox {
-  grid-area: description;
-  align-self: stretch;
   display: flex;
-  position: relative;
-  margin-top: -3%;
+  flex-direction: column;
+  min-height: 9vw;
+  max-height: 9vw;
 }
 .description {
-  grid-area: description;
   font-family: var(--font);
-  font-size: clamp(1rem, 1.5vw,1.2rem);
-  align-self: flex-start;
+  font-size: 1.2vw;
   margin-left: 2%;
   padding: 0% 3% 0% 3%;
-  text-overflow: ellipsis;
-
-
+  position: relative;
+  bottom: 20%;
 }
 
 .iconBar {
-  grid-area: iconBar;
-  justify-self: flex-start;
-  align-self: center;
-  margin-left: 5%;
-  min-width: 80%;
-  max-width: 90%;
+  min-width: 70%;
+  max-width: 70%;
+  position: relative;
+  bottom: 20%;
+  left: 5%;
 }
 
+@media only screen and (max-width: 1200px) {
 
-@media only screen and (max-width: 400px) {
-  .iconBar {
+  .mainBoxLeft, .imageBox {
+    min-height: 12vw;
+    max-height: 12vw;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .mainBoxLeft, .imageBox {
+    min-height: 23vw;
+    max-height: 23vw;
+  }
+
+  .title {
+    font-size: 2.2vw;
+  }
+  .description {
+    font-size: 2.3vw;
 
   }
-  .descriptionBox {
-    grid-area: description;
-    align-self: stretch;
-    display: flex;
+  .iconBar {
     position: relative;
-    margin-top: -10%;
+    bottom: 15%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .title {
+    position: relative;
+    bottom: 20%;
+    font-size: 3vw;
+  }
+
+  .iconBar {
+    position: relative;
+    bottom: 90%;
+  }
+  .description {
+    font-size: 3vw;
+    position: relative;
+    bottom: 70%;
   }
 }

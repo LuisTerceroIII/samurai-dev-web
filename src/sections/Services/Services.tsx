@@ -50,9 +50,9 @@ const Services = () => {
             childImageSharp {
               gatsbyImageData(
                 placeholder: BLURRED
-                width: 40
+                width: 30
                 transformOptions: { fit: COVER }
-                height: 40
+                height: 30
               )
               id
             }
@@ -68,9 +68,9 @@ const Services = () => {
             childImageSharp {
               gatsbyImageData(
                 placeholder: BLURRED
-                width: 40
+                width: 30
                 transformOptions: { fit: CONTAIN }
-                height: 40
+                height: 30
               )
               id
             }
@@ -81,8 +81,8 @@ const Services = () => {
       backendImage: file(relativePath: { regex: "/backend.png/" }) {
         childImageSharp {
           gatsbyImageData(
-            height: 130
-            width: 130
+            height: 100
+            width: 100
             placeholder: BLURRED
             layout: CONSTRAINED
           )
@@ -91,8 +91,8 @@ const Services = () => {
       frontendImage: file(relativePath: { regex: "/frontend.png/" }) {
         childImageSharp {
           gatsbyImageData(
-            height: 130
-            width: 130
+            height: 100
+            width: 100
             placeholder: BLURRED
             layout: CONSTRAINED
           )
@@ -101,8 +101,8 @@ const Services = () => {
       fullstackImage: file(relativePath: { regex: "/fullstack.png/" }) {
         childImageSharp {
           gatsbyImageData(
-            height: 130
-            width: 130
+            height: 100
+            width: 100
             placeholder: BLURRED
             layout: CONSTRAINED
           )
@@ -112,8 +112,8 @@ const Services = () => {
       maintenanceImage: file(relativePath: { regex: "/maintenance.png/" }) {
         childImageSharp {
           gatsbyImageData(
-            height: 130
-            width: 130
+            height: 100
+            width: 100
             placeholder: BLURRED
             layout: CONSTRAINED
           )
@@ -123,8 +123,8 @@ const Services = () => {
       webDesignImage: file(relativePath: { regex: "/webDesign.png/" }) {
         childImageSharp {
           gatsbyImageData(
-            height: 130
-            width: 130
+            height: 100
+            width: 100
             placeholder: BLURRED
             layout: CONSTRAINED
           )

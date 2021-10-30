@@ -98,7 +98,7 @@ En este sitio obtendrás la información necesaria para saber  de qué manera pu
           frontend: {
             title: "Front end",
             description:
-              "Desarrollo de sitios web estáticos y aplicaciones web.",
+              "Desarrollo de sitios y aplicaciones web.",
           },
           fullstack: {
             title: "Full Stack",

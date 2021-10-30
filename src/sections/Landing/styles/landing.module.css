@@ -62,7 +62,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   border-radius: 70px;
   background-color: #f7ca13;
   transition: all 0.5s ease-out;
-  cursor: url("../../../assets/cursors/hoverCursor.png"), auto;
+  cursor:pointer;
   justify-self: center;
   position: relative;
   box-shadow: var(--perfect-box-shadow);
