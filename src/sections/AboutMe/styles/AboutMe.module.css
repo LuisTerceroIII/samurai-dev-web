@@ -1,21 +1,16 @@
 
 .mainContainer {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: .1fr .8fr .8fr .5fr;
-  grid-template-areas:
-    "title"
-    "paragraph"
-    "image"
-    "icon"
-;
+  max-width: 80%;
+  min-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
-  grid-area: title;
   color: #225d00;
   font-family: var(--font);
-  font-size: 2.5em;
+  font-size: 2.5vw;
   font-weight: normal;
   text-align: center;
 }
@@ -25,15 +20,11 @@
   font-family: var(--font);
   font-size: var(--responsive-font-size);
   text-align: center;
-  padding: 0% 10% 0% 10%;
+  padding: 0% 5% 0% 5%;
+  cursor: auto;
   line-height: var(--desktop-line-height);
-
 }
 
-.image {
-  grid-area: image;
-  align-self: center;
-}
 .linkCV {
   max-width: 5vw;
   min-width: 5vw;
@@ -41,14 +32,12 @@
   justify-self: center;
 }
 .icon {
-  grid-area: icon;
   cursor:pointer;
-  min-width: 5vw;
-  max-width: 5vw;
+  min-width: 4vw;
+  max-width: 4vw;
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
-
+  transform: translateX(-50%) translateY(50%);
 
 }
 
@@ -59,19 +48,16 @@
     min-width: 8vw;
     max-width: 8vw;
     position: relative;
-    top: 4%;
+    top: 24%;
   }
   .title {
     text-align: center;
+    font-size: 3.5vw;
   }
   .paragraph {
     text-align: center;
     padding: 4% 4% 0% 4%;
     line-height: var(--mobile-line-height);
-  }
-  .image {
-    padding: 0% 10% 0% 10%;
-
   }
 }
 
@@ -89,6 +75,7 @@
   }
   .title {
     text-align: center;
+    font-size: 4vw;
   }
   .paragraph {
     text-align: center;
@@ -144,6 +131,7 @@
   }
   .title {
     text-align: center;
+    font-size: 5vw;
   }
   .paragraph {
     text-align: center;

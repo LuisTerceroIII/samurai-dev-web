@@ -14,13 +14,13 @@ const AboutMeView: React.FC<AboutMeProps> = ({
     <section className={styles.mainContainer}>
       <Title content={title.content} cssClass={styles.title} />
       <Paragraph content={paragraph.content} cssClass={styles.paragraph} />
-      <StaticImage
+      {/*<StaticImage
         src={"../../assets/images/AboutMe/aboutMe.png"}
         alt={"me"}
         className={styles.image}
         placeholder="blurred"
         objectFit={"contain"}
-      />
+      />*/}
       <a
         className={styles.linkCV}
         href={
