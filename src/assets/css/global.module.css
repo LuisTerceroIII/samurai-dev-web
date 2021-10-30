@@ -11,25 +11,20 @@
 
 body,
 html {
-  height: 100% !important;
+  min-height: 100% !important;
   margin: 0 !important;
 }
 
 html {
   background: #efefda;
+  min-height: 100%;
 }
+
 ::selection {
   color: black;
   background: #c85c23;
 }
 
-
-p {
-  cursor: pointer;
-}
-a {
-  cursor: pointer;;
-}
 :root {
   --font:'Be Vietnam', sans-serif;
   --title-color: #090909;

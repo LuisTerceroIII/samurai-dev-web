@@ -30,6 +30,7 @@
   min-width: 5vw;
   align-self: center;
   justify-self: center;
+  margin-bottom: 10%;
 }
 .icon {
   cursor:pointer;
@@ -37,10 +38,8 @@
   max-width: 4vw;
   position: relative;
   left: 50%;
-  transform: translateX(-50%) translateY(50%);
-
+  transform: translateX(-50%) ;
 }
-
 
 @media only screen and (max-width: 1000px) {
 
@@ -63,9 +62,7 @@
 
 
 @media only screen and (max-width: 750px) {
-  .mainContainer {
-    grid-template-rows: .1fr .8fr .3fr .4fr;
-  }
+
 
   .icon {
     min-width: 8vw;
@@ -95,33 +92,22 @@
 }
 @media (max-width: 700px) and (orientation: landscape) {
   /* Style adjustments for portrait mode goes here */
-  .mainContainer {
-    grid-template-rows: .1fr .8fr .4fr .7fr .1fr;
-  }
+
   .paragraph {
     margin-top: -3%;
     line-height: 7.5vw;
   }
-  .image {
-    margin-top: 10%;
-  }
+
 
   .icon {
     margin-top: 10%;
   }
 }
 @media only screen and (max-width: 620px) {
-  .mainContainer {
-    grid-template-rows: .1fr .8fr .3fr .2fr;
 
-  }
 }
 
 @media only screen and (max-width: 530px) {
-  .mainContainer {
-    grid-template-rows: .1fr .4fr .3fr .1fr;
-  }
-
 
   .icon {
     min-width: 10vw;
@@ -139,15 +125,10 @@
     line-height: 8.5vw;
     margin-top: -2%;
   }
-  .image {
-    padding: 0% 20% 0% 20%;
-  }
 }
 
 @media only screen and (max-width: 390px) {
-  .mainContainer {
-    grid-template-rows: .1fr .4fr .3fr .4fr;
-  }
+
 
 
 }
