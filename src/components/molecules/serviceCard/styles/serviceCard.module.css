@@ -105,21 +105,27 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 470px) {
+
+  .mainBoxLeft, .imageBox {
+    min-height: 5vw;
+    max-height: 25vw;
+  }
 
   .title {
     position: relative;
     bottom: 20%;
     font-size: 3vw;
+
   }
 
   .iconBar {
     position: relative;
-    bottom: 90%;
+    bottom: 70%;
   }
   .description {
     font-size: 3vw;
     position: relative;
-    bottom: 70%;
+    bottom: 60%;
   }
 }

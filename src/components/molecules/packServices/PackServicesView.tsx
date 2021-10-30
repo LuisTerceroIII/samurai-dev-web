@@ -8,7 +8,6 @@ import * as styles from "./styles/packServices.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
-import { useMediaQuery } from "react-responsive";
 
 const PackServicesView: React.FC<PackServicesProps> = ({
   services,
