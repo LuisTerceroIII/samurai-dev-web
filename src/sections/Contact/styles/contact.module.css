@@ -1,51 +1,46 @@
-.grid {
-    display: grid;
-    grid-template-columns: .3fr 1fr .1fr 1fr .3fr;
-    grid-template-rows: .3fr .1fr ;
-
-    grid-template-areas:
-            ". . . . ."
-            ". personalInfo personalInfo image ."
-    ;
-    align-items: center;
-    justify-items: stretch;
+.mainContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
     min-height: 100vh;
 }
 
+.contactContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    gap: 40px;
+    min-width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-weight: 250;
+}
+
 .personalCardInfoBox {
-    grid-area: personalInfo;
-    transform: scale(.92);
+    flex-grow: 1;
+    padding: 5% 5% 5% 5%;
+    margin-left: 5%;
 }
 .image {
-    grid-area: image;
-    transform: scale(.85);
+    flex-grow: 1;
+    transform: scale(.6);
 }
 
-@media only screen and (max-width: 700px) {
-    .grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: .5fr .5fr .3fr;
-        grid-template-areas:
-                "image"
-                "personalInfo"
-    ;
+@media only screen and (max-width: 1000px) {
 
-        margin: 0 auto;
-        margin-top: 10%;
-        max-width: 90%;
-
-
+    .mainContainer {
+        margin-top: -10%;
     }
+
     .personalCardInfoBox {
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        min-width: fit-content;
-        margin-left: 10%;
+        padding: 0% 20% 20% 20%;
+        margin-top: -15%;
 
     }
     .image {
-        transform: scale(.3);
+        transform: scale(.5);
     }
 
     
@@ -53,7 +48,5 @@
 
 @media (max-width: 700px) and (orientation: landscape) {
     /* Style adjustments for portrait mode goes here */
-   .grid {
-       margin-top: 10%;
-   }
+
 }

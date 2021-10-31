@@ -6,17 +6,19 @@ import PersonalInfoCard from "../../components/organisms/PersonalInfoCard/Person
 
 const ContactView = () => {
     return (
-      <div className={styles.grid}>
-        <div className={styles.personalCardInfoBox}>
-          <PersonalInfoCard/>
-        </div>
-        <StaticImage
-          className={styles.image}
-          src={"../../assets/images/Contact/buzon.png"}
-          alt={"mail box"}
-          objectFit={"contain"}
-          placeholder="TRACED_SVG"
-        />
+      <div className={styles.mainContainer}>
+          <div className={styles.contactContainer}>
+              <div className={styles.personalCardInfoBox}>
+                  <PersonalInfoCard/>
+              </div>
+              <StaticImage
+                  className={styles.image}
+                  src={"../../assets/images/Contact/buzon.png"}
+                  alt={"mail box"}
+                  objectFit={"contain"}
+                  placeholder="TRACED_SVG"
+              />
+          </div>
       </div>
     );
 };

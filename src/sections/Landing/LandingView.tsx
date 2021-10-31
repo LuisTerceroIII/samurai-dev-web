@@ -16,7 +16,7 @@ const LandingView: React.FC<LandingProps> = ({
       <Title cssClass={title.cssClass} content={title.content} />
       <StaticImage
         placeholder="TRACED_SVG"
-        src={"../../assets/images/Landing/profile-pic.png"}
+        src={"../../assets/images/Landing/samurai.png"}
         alt={"My profile picture"}
         className={styles.image}
         objectFit={"contain"}

@@ -6,7 +6,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
 .grid {
   display: grid;
   grid-template-columns: .2fr repeat(2,1fr) .5fr .5fr .5fr;
-  grid-template-rows: .3fr .2fr repeat(4,.3fr);
+  grid-template-rows: .4fr .2fr repeat(4,.3fr);
   /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(191,219,237,0.725910432532388) 0%, rgba(0,212,255,0.6194678555015756) 100%);*/
   margin-top: -6%;
   grid-template-areas:
@@ -22,7 +22,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   grid-area: title;
   color: var(--title-color);
   transition: transform 0.2s ease;
-  font-size:  clamp(1.5rem, 2vw, 1.9rem);
+  font-size:  clamp(2vw, 2.5vw, 3vw);
   font-family: var(--font);
   font-weight: 650;
   word-spacing: 2px;
@@ -94,7 +94,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
 }
 
 
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 1350px) {
   .image {
     transform: scale(2.1) translateY(-25%) translateX(5%);
   }
@@ -123,6 +123,8 @@ Esta hoja de estilo contiene todos los estilos para Landing.
     position: relative;
     top: 10%;
     margin-top: 5%;
+    font-size:  clamp(3.2vw, 3.4vw, 3.8vw);
+    padding: 0% 8% 0% 8%;
   }
   .paragraph {
     text-align: center;
@@ -130,6 +132,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
     line-height: var(--mobile-line-height);
     position: relative;
     top: 5%;
+    font-size:  clamp(2vw, 2.2vw, 2.6vw);
 
   }
   .image {
@@ -154,11 +157,11 @@ Esta hoja de estilo contiene todos los estilos para Landing.
 
   }
   .title {
-    padding: 0% 4% 0% 4%;
+    font-size:  clamp(3.6vw, 3.8vw, 4.2vw);
   }
   .paragraph {
     position: relative;
-
+    font-size:  clamp(2vw, 2.8vw, 3vw);
   }
 
   .grid {
@@ -167,7 +170,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
     margin-top: 5%;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .button {
     min-width: 40%;
     max-width: 40%;
@@ -177,7 +180,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   }
   .paragraph {
     position: relative;
-
+    font-size:  clamp(2.6vw, 3.7vw, 4.2vw);
   }
 
   .grid {

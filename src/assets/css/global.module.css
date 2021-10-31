@@ -22,7 +22,7 @@ html {
 
 ::selection {
   color: black;
-  background: #c85c23;
+  background: #ffd185;
 }
 
 :root {
@@ -34,12 +34,13 @@ html {
   --desktop-text-size: 3vw;
   --desktop-line-height: 3.5vw;
   --perfect-box-shadow: -1px 0px 34px -11px rgba(0, 0, 0, 1);
-  --responsive-font-size: clamp(1.3rem, 2vw, 1.6rem);
+  --responsive-font-size: clamp(1.3vw, 1.5vw, 1.9vw);
   --mobile-line-height: 6vw;
 }
 
+
 .backgroundAboutMe {
-  background: url("../../assets/images/AboutMe/background.svg");
+  background: url("../../assets/images/AboutMe/waves2.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -48,17 +49,18 @@ html {
   min-height: 100vh;
 }
 .backgroundLanding {
-  background: url("../../assets/images/Landing/LandingWaves.svg");
+  background: url("../../assets/images/Landing/Newwave.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   overflow: visible;
+  min-height: 100vh;
 
 
 }
 .backgroundServices {
-  background: url("../../assets/images/Services/backgroundPackServices.svg");
+  background: url("../../assets/images/Services/waves2.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -66,9 +68,11 @@ html {
   overflow: visible;
 
 }
-
+/*
+Colores de background rgba(208, 128, 120, 0.42) y rgba(217, 187, 40, 0.06)
+*/
 .backgroundContact {
-  background: url("../../assets/images/Contact/background.svg");
+  background: url("../../assets/images/Contact/waves2.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

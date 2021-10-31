@@ -1,9 +1,10 @@
 .mainBox {
     border: 2px solid black;
     min-width: fit-content;
-    max-width: 80%;
-    min-height: fit-content;
+    max-height: fit-content;
     background-color: #f6f7eb;
+    transform: scale(1);
+
 }
 
 .personalInfoBox {
@@ -12,14 +13,15 @@
     margin-left: 5%;
     margin-top: 10%;
     font-family: var(--font);
-    font-size: clamp(.99rem,1.8vw,2.5rem);
+    font-size: clamp(1.6vw,1.8vw,2.6vw);
+
 }
 
 .title {
     font-weight: 750;
 }
 .personalInfoBox p {
-    font-size: clamp(0.8rem,2vw,2.5rem);
+
 }
 .icons {
     display: flex;
@@ -37,16 +39,8 @@
 
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
     .personalInfoBox {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        max-width: fit-content;
-    }
-    .personalInfoBox p {
-        font-size: clamp(1.2rem,2.5vw,2.5rem);
-        overflow: hidden;
-
+        font-size: clamp(2vw,3vw,3.6vw);
     }
 }

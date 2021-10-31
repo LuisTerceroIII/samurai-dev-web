@@ -100,7 +100,11 @@ const PackServices = () => {
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      servicesData.forEach(service => service.active = false)
+    }
+
   });
 
   return (

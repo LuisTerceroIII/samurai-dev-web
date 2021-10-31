@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { pageIsLoad, pageFailOnLoad, openSite } from "../../assets/js/utils";
 // @ts-ignore
 import * as styles from "./styles/landing.module.css";
-import LandingBackground from "./LandingBackground";
+
 
 const Landing: React.FC = (): JSX.Element => {
   //Gets the data in the gatsby-config file
