@@ -84,6 +84,7 @@ const Services = () => {
             width: 100
             placeholder: BLURRED
             layout: CONSTRAINED
+     
           )
         }
       }
