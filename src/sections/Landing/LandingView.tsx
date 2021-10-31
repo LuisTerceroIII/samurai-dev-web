@@ -4,6 +4,8 @@ import Title from "../../components/atoms/Title/Title";
 import Paragraph from "../../components/atoms/Paragraph/Paragraph";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
+import {CreamButton} from "../../components/atoms/CreamButton/CreamButton";
+
 
 const LandingView: React.FC<LandingProps> = ({
   title,
@@ -13,18 +15,18 @@ const LandingView: React.FC<LandingProps> = ({
 }): JSX.Element => {
   return (
     <div className={styles.grid}>
-      <Title cssClass={title.cssClass} content={title.content} />
-      <StaticImage
-        placeholder="TRACED_SVG"
-        src={"../../assets/images/Landing/samurai.png"}
-        alt={"My profile picture"}
-        className={styles.image}
-        objectFit={"contain"}
-      />
-      <Paragraph content={paragraph.content} cssClass={paragraph.cssClass} />
-      <div className={button.cssClass}>
-        <Link to={"/services"}>{button.value}</Link>
-      </div>
+        <Title cssClass={title.cssClass} content={title.content}/>
+        <StaticImage
+            placeholder="TRACED_SVG"
+            src={"../../assets/images/Landing/samurai.png"}
+            alt={"My profile picture"}
+            className={styles.image}
+            objectFit={"contain"}
+        />
+        <Paragraph content={paragraph.content} cssClass={paragraph.cssClass}/>
+        <Link to={"/services"} className={styles.linkTo}>
+            <CreamButton value={button.value}/>
+        </Link>
     </div>
   );
 };

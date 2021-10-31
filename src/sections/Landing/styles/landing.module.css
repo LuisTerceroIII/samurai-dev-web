@@ -51,49 +51,14 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   /*transform: scale(2.1) translateY(-20%) translateX(5%);*/
   transform: scale(2.1) translateY(-20%) translateX(5%);
 }
-
-.button {
-  grid-area: button;
-  border-style: none;
-  min-width: 25%;
-  max-width: 25%;
-  min-height: 70%;
-  max-height: 70%;
-  border-radius: 70px;
-  background-color: #f7ca13;
-  transition: all 0.5s ease-out;
-  cursor:pointer;
+.linkTo {
+  grid-area : button;
+  align-self: center;
   justify-self: center;
-  position: relative;
-  box-shadow: var(--perfect-box-shadow);
-  font-family: var(--font);
-  display: flex;
-  justify-content: center;
-}
-.button a {
-  color: black;
-  text-decoration: none;
-  font-size: clamp(1.3rem,2vw,1.8rem);
-  align-self: center;
-
+  max-width: 50%;
+  min-width: 50%;
 
 }
-
-.button:hover {
-  transform: scale(1.1);
-  transition: all 0.5s ease-out;
-}
-
-.button p {
-  font-family: var(--font);
-  align-self: center;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-
-}
-
-
 @media only screen and (max-width: 1350px) {
   .image {
     transform: scale(2.1) translateY(-25%) translateX(5%);
@@ -109,7 +74,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .8fr .1fr .2fr .2fr .1fr;
+    grid-template-rows: .8fr .1fr .2fr .2fr 1fr;
     grid-template-areas:
       "image"
       "title"

@@ -1,7 +1,6 @@
 import * as React from "react";
 import ServicesView from "./ServicesView";
 import { graphql, useStaticQuery } from "gatsby";
-import { useEffect, useState } from "react";
 
 const Services = () => {
 
