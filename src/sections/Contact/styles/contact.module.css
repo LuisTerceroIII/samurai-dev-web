@@ -46,6 +46,14 @@
     
 }
 
+@media only screen and (max-width: 450px) {
+
+    .personalCardInfoBox {
+        min-width: 60%;
+        max-width: 60%;
+    }
+}
+
 @media (max-width: 700px) and (orientation: landscape) {
     /* Style adjustments for portrait mode goes here */
 

@@ -44,3 +44,7 @@
         font-size: clamp(2vw,3vw,3.6vw);
     }
 }
+
+@media only screen and (max-width: 450px) {
+
+}
