@@ -15,12 +15,12 @@ const ServicesView: React.FC<ServiceProps> = ({ servicesCardsData,buttonContent 
   return (
     <div className={styles.grid}>
         <Title cssClass={styles.mainTitle} content={"Servicios"}/>
-        <Title cssClass={styles.secondTitle} content={"Paquetes"}/>
+
         <PackServices/>
         <Link to={"/contact"} className={styles.linkTo}>
             <DeepBlueButton buttonContent={buttonContent}/>
         </Link>
-        <Title cssClass={styles.thirdTitle} content={"Específicos"}/>
+        <Title cssClass={styles.thirdTitle} content={"Otros"}/>
         <ServicesCards
             servicesCardsData={servicesCardsData}
             cssClass={styles.servicesCards}

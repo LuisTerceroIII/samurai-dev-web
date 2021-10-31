@@ -11,8 +11,8 @@ import * as styles from "./styles/packServices.module.css";
 //TODO: SACAR QUERY DE AQUI, LLEVAR A SERVICE Y HACER LLEGAR AQUI!
 const PackServices = () => {
 
-  const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 990px)" });
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 990px)" });
+  const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 750px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 750px)" });
   const [showParagraph, setShowParagraph] = useState(false)
   const query = useStaticQuery(graphql`
     query servicesPacksData {

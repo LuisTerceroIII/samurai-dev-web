@@ -4,6 +4,7 @@
   grid-template-rows: 1fr;
   justify-items: center;
   padding: 0% 15% 0% 15%;
+  transform: scale(.8);
 }
 
 .titleIconContainer {
@@ -17,8 +18,8 @@
   cursor:pointer;
   align-self: center;
   justify-self: center;
-  min-width: 75%;
-  max-width: 75%;
+  min-width: 70%;
+  max-width: 70%;
   gap: 15px;
 }
 
@@ -32,6 +33,7 @@
   transition: all 0.5s ease-out;
   min-width: 100%;
   max-width: 100%;
+  display: flex;
 }
 
 .titleBox:hover {
@@ -44,8 +46,11 @@
   text-transform: uppercase;
   text-align: center;
   align-self: center;
-  font-size: 2.2vw;
+  padding: 0% 5% 0% 5%;
+  font-size:  clamp(25px, 27px, 30px);
   text-shadow: 1px 0px 20px rgba(39, 36, 38, 0.57);
+
+
 }
 
 .iconContainer {
@@ -80,6 +85,7 @@
     transform: scale(1);
   }
   .serviceName {
+    font-size:  clamp(23px, 24px, 28px);
   }
 
   .paragraph {
@@ -92,6 +98,7 @@
     transform: scale(1);
   }
   .serviceName {
+    font-size:  clamp(20px, 20px, 24px);
   }
 }
 @media only screen and (max-width: 690px) {
@@ -115,7 +122,7 @@
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 750px) {
   .grid {
     display: flex;
     flex-direction: column;
@@ -127,8 +134,8 @@
     margin: 2% 0% 2% 0%;
   }
   .titleBox {
-    min-height: 8vw;
-    max-height: 8vw;
+    max-height: 80px;
+    min-height: 80px;
     min-width: 60%;
     max-width: 60%;
   }
@@ -150,14 +157,13 @@
   }
 
   .serviceName {
-    font-size: 2.3vw;
     font-weight: 600;
   }
 }
 @media only screen and (max-width: 590px) {
 
   .titleBox {
-    min-width: 200px;
+    min-width: 160px;
     display: flex;
   }
 
