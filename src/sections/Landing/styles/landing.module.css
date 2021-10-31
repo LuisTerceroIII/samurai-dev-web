@@ -22,7 +22,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   grid-area: title;
   color: var(--title-color);
   transition: transform 0.2s ease;
-  font-size:  clamp(2vw, 2.5vw, 3vw);
+  font-size:  clamp(22px, 28px, 32px);
   font-family: var(--font);
   font-weight: 650;
   word-spacing: 2px;
@@ -33,7 +33,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
 .paragraph {
   grid-area: paragraph;
   color: var(--text-color);
-  font-size: var(--responsive-font-size);
+  font-size: clamp(17px, 20px, 20px);
   font-family: var(--font);
   line-height: var(--desktop-line-height);
   word-spacing: 0.2vw;
@@ -69,7 +69,7 @@ Esta hoja de estilo contiene todos los estilos para Landing.
     transform: scale(2.1) translateY(-25%) translateX(5%);
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
 
   .grid {
     display: grid;
@@ -85,11 +85,9 @@ Esta hoja de estilo contiene todos los estilos para Landing.
 
   .title {
     text-align: center;
-    position: relative;
-    top: 10%;
-    margin-top: 5%;
-    font-size:  clamp(3.2vw, 3.4vw, 3.8vw);
+    font-size: clamp(22px, 30px, 32px);
     padding: 0% 8% 0% 8%;
+    margin-top: -5%;
   }
   .paragraph {
     text-align: center;
@@ -97,11 +95,12 @@ Esta hoja de estilo contiene todos los estilos para Landing.
     line-height: var(--mobile-line-height);
     position: relative;
     top: 5%;
-    font-size:  clamp(2vw, 2.2vw, 2.6vw);
+
 
   }
   .image {
-    transform: scale(.7) translateY(15%);
+    margin-top: -20%;
+    transform: scale(.5) translateY(15%);
   }
   .button {
     min-width: 20%;
@@ -122,11 +121,11 @@ Esta hoja de estilo contiene todos los estilos para Landing.
 
   }
   .title {
-    font-size:  clamp(3.6vw, 3.8vw, 4.2vw);
+    font-size: clamp(20px, 25px, 27px);
   }
   .paragraph {
     position: relative;
-    font-size:  clamp(2vw, 2.8vw, 3vw);
+    font-size: clamp(18px, 20px, 25px);
   }
 
   .grid {
@@ -146,10 +145,11 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   }
   .title {
     padding: 0% 1% 0% 1%;
+    font-size: clamp(20px, 23px, 24px);
   }
   .paragraph {
     position: relative;
-    font-size:  clamp(2.6vw, 3.7vw, 4.2vw);
+
   }
 
 }
