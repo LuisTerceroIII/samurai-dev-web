@@ -18,10 +18,11 @@ const LandingView: React.FC<LandingProps> = ({
         <Title cssClass={title.cssClass} content={title.content}/>
         <StaticImage
             placeholder="TRACED_SVG"
-            src={"../../assets/images/Landing/samurai.png"}
+            src={"../../assets/images/Landing/samurai2.png"}
             alt={"My profile picture"}
             className={styles.image}
             objectFit={"contain"}
+            quality={100}
         />
         <Paragraph content={paragraph.content} cssClass={paragraph.cssClass}/>
         <Link to={"/services"} className={styles.linkTo}>

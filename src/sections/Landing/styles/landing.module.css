@@ -136,6 +136,10 @@ Esta hoja de estilo contiene todos los estilos para Landing.
   }
 }
 @media only screen and (max-width: 450px) {
+  .image {
+    margin-top: -10%;
+    padding-bottom: 5%;
+  }
   .button {
     min-width: 40%;
     max-width: 40%;
@@ -148,10 +152,6 @@ Esta hoja de estilo contiene todos los estilos para Landing.
     font-size:  clamp(2.6vw, 3.7vw, 4.2vw);
   }
 
-  .grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: .8fr .1fr .1fr .2fr;
-  }
 }
 
 @media (max-width: 700px) and (orientation: landscape) {
