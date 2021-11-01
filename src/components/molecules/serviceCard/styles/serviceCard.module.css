@@ -237,7 +237,7 @@
   }
   .description {
     bottom: 80%;
-    font-size: clamp(12px, 13.2px, 14px);
+    font-size: clamp(12px, 12px, 14px);
   }
 }
 
