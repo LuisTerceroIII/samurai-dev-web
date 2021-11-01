@@ -31,7 +31,7 @@
   align-self: stretch;
   font-family: var(--font);
   margin-left: 5%;
-  font-size: 1.5vw;
+  font-size: clamp(19px, 22px, 24px);
 }
 
 .imageBox {
@@ -61,7 +61,7 @@
 }
 .description {
   font-family: var(--font);
-  font-size: 1.2vw;
+  font-size: 1.22vw;
   margin-left: 2%;
   padding: 0% 3% 0% 3%;
   position: relative;
@@ -76,16 +76,18 @@
   left: 5%;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
 
   .mainBoxLeft, .imageBox {
     min-height: 12vw;
     max-height: 12vw;
   }
 
+
+
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
 
   .mainBoxLeft, .imageBox {
     min-height: 23vw;
@@ -93,39 +95,124 @@
   }
 
   .title {
-    font-size: 2.2vw;
+    font-size: clamp(19px, 24px, 24px);
+    margin-bottom: -0.1%;
   }
   .description {
-    font-size: 2.3vw;
+    font-size: clamp(19px, 20px, 24px);
 
   }
   .iconBar {
     position: relative;
-    bottom: 15%;
+
   }
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 750px) {
 
   .mainBoxLeft, .imageBox {
-    min-height: 5vw;
+    min-height: 23vw;
+    max-height: 23vw;
+  }
+
+  .title {
+    font-size: clamp(19px, 24px, 24px);
+    position: relative;
+    bottom: 20%;
+  }
+  .description {
+    font-size: clamp(19px, 20px, 24px);
+    position: relative;
+    bottom: 40%;
+  }
+  .iconBar {
+    position: relative;
+    bottom: 55%;
+  }
+}
+@media only screen and (max-width: 655px) {
+  .mainBoxLeft, .imageBox {
+    min-height: 8vw;
     max-height: 25vw;
   }
 
   .title {
     position: relative;
     bottom: 20%;
-    font-size: 3vw;
+    font-size: clamp(19px, 22px, 24px);
 
   }
 
   .iconBar {
     position: relative;
-    bottom: 70%;
+    bottom: 65%;
   }
   .description {
-    font-size: 3vw;
+
     position: relative;
-    bottom: 60%;
+    bottom: 55%;
   }
 }
+@media only screen and (max-width: 580px) {
+  .mainBoxLeft, .imageBox {
+    min-height: 8vw;
+    max-height: 25vw;
+  }
+
+  .title {
+    position: relative;
+    bottom: 20%;
+
+  }
+
+  .iconBar {
+    position: relative;
+    bottom: 80%;
+  }
+  .description {
+    font-size: 18px;
+    position: relative;
+    bottom: 55%;
+  }
+}
+
+
+
+@media only screen and (max-width: 530px) {
+
+  .mainBoxLeft, .imageBox {
+    min-height: 30vw;
+    max-height: 30vw;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+
+}
+@media only screen and (max-width: 440px) {
+
+  .mainBoxLeft, .imageBox {
+    min-height: 33vw;
+    max-height: 33vw;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .title {
+    position: relative;
+    bottom: 20%;
+    font-size: clamp(19px, 20px, 24px);
+
+  }
+
+  .iconBar {
+    position: relative;
+    bottom: 90%;
+  }
+  .description {
+    bottom: 60%;
+    font-size: 16px;
+  }
+}
+
+

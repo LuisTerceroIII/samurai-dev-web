@@ -46,7 +46,6 @@
   text-transform: uppercase;
   text-align: center;
   align-self: center;
-  padding: 0% 5% 0% 5%;
   font-size:  clamp(25px, 27px, 30px);
   text-shadow: 1px 0px 20px rgba(39, 36, 38, 0.57);
 
@@ -70,8 +69,7 @@
   grid-column: 1/4;
   font-family: var(--font);
   line-height: var(--desktop-line-height);
-  /*font-size: 1.6vw;*/
-  font-size: clamp(1.4vw, 1.6vw, 2vw);
+  font-size: clamp(19px, 24px, 24px);
   color: var(--text-color);
   text-align: center;
   justify-self: left;
@@ -126,6 +124,7 @@
   .grid {
     display: flex;
     flex-direction: column;
+    transform: scale(1);
   }
   .titleIconContainer {
     grid-area: titleIcon;
@@ -134,10 +133,16 @@
     margin: 2% 0% 2% 0%;
   }
   .titleBox {
-    max-height: 80px;
-    min-height: 80px;
-    min-width: 60%;
-    max-width: 60%;
+    max-height: 90px;
+    min-height: 90px;
+    min-width: 80%;
+    max-width: 80%;
+  }
+
+  .serviceName {
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .iconContainer {
@@ -151,33 +156,21 @@
 
   .paragraph {
     grid-area: paragraph;
-    line-height: var(--mobile-line-height);
     max-height: 800px;
-    font-size: clamp(2vw, 2.2vw, 2.6vw);
+    font-size: clamp(18px, 20px, 25px);
+    padding: 0%;
+    min-width: 160%;
   }
 
-  .serviceName {
-    font-weight: 600;
-  }
+
+
 }
 @media only screen and (max-width: 590px) {
 
-  .titleBox {
-    min-width: 160px;
-    display: flex;
-  }
-
   .serviceName {
-    font-size: 100%;
     align-self: center;
     justify-self: center;
     margin: 0 auto;
-  }
-  .paragraph {
-    font-size:  clamp(2.6vw, 3.7vw, 4.2vw);
-    line-height: 8vw;
-    min-width: 85vw;
-
   }
 
   .iconContainer {

@@ -54,7 +54,7 @@
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   .servicesCards {
     min-width: 85%;
     max-width: 85%;
