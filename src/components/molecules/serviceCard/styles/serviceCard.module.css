@@ -215,4 +215,30 @@
   }
 }
 
+@media only screen and (max-width: 375px) {
+
+  .mainBoxLeft, .imageBox {
+    min-height: 33vw;
+    max-height: 33vw;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .title {
+    position: relative;
+    bottom: 45%;
+    font-size: clamp(19px, 17px, 24px);
+
+  }
+
+  .iconBar {
+    position: relative;
+    bottom: 100%;
+  }
+  .description {
+    bottom: 80%;
+    font-size: clamp(12px, 13.2px, 14px);
+  }
+}
+
 
