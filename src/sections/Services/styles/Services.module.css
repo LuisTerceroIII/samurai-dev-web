@@ -55,7 +55,7 @@
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .servicesCards {
     min-width: 85%;
     max-width: 85%;
@@ -64,6 +64,7 @@
     grid-auto-rows: auto;
     justify-items: center;
   }
+
   .button {
     min-width: 20%;
     max-width: 20%;
