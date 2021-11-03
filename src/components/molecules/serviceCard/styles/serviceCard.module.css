@@ -227,7 +227,7 @@
   .title {
     position: relative;
     bottom: 45%;
-    font-size: clamp(19px, 17px, 24px);
+    font-size: clamp(13px, 15px, 16px);
 
   }
 
