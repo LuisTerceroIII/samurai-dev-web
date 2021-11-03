@@ -129,3 +129,26 @@
     bottom: 60%;
   }
 }
+
+
+@media only screen and (max-width: 380px) {
+
+  .title {
+    position: relative;
+    bottom: 20%;
+    font-size: 3.6vw;
+
+  }
+
+  .description {
+    font-size: 3.5vw;
+    position: relative;
+    bottom: 80%;
+  }
+
+  .iconBar {
+    position: relative;
+    bottom: 110%;
+  }
+}
+
