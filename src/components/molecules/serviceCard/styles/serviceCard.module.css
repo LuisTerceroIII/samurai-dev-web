@@ -143,12 +143,12 @@
   .description {
     font-size: 3.5vw;
     position: relative;
-    bottom: 80%;
+    bottom: 90%;
   }
 
   .iconBar {
     position: relative;
-    bottom: 110%;
+    bottom: 120%;
   }
 }
 
