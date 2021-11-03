@@ -132,7 +132,7 @@
 
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 600px) {
 
   .mainBoxLeft, .imageBox {
     min-height: 5vw;
