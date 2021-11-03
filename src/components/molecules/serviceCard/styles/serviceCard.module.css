@@ -87,6 +87,9 @@
 
 @media only screen and (max-width: 1000px) {
 
+  .mainBoxLeft {
+    transform: scale(.75);
+  }
   .mainBoxLeft, .imageBox {
     min-height: 23vw;
     max-height: 23vw;
@@ -103,6 +106,21 @@
     position: relative;
     bottom: 15%;
   }
+}
+@media only screen and (max-width: 750px) {
+
+  .mainBoxLeft {
+    transform: scale(.9);
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  .mainBoxLeft {
+    transform: scale(1);
+  }
+
 }
 
 @media only screen and (max-width: 470px) {
